@@ -1,0 +1,146 @@
+{
+  "actId": 4,
+  "title": "The Harrowing",
+  "subtitle": "Pandemonium Fortress · Plains of Despair · Chaos Sanctuary",
+  "questions": [
+    {
+      "id": "a4-pandemonium",
+      "difficulty": 1,
+      "prompt": "What is the Act IV town called?",
+      "choices": ["Harrogath", "Pandemonium Fortress", "Kurast Docks", "Tristram"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+4",
+      "explanation": "Pandemonium Fortress is the last outpost of Heaven at the gates of Hell."
+    },
+    {
+      "id": "a4-izual-plains",
+      "difficulty": 1,
+      "prompt": "Izual, the fallen angel, is hunted across which area?",
+      "choices": [
+        "Chaos Sanctuary",
+        "Plains of Despair",
+        "River of Flame",
+        "City of the Damned"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Izual wanders the Plains of Despair as part of the Fallen Angel quest."
+    },
+    {
+      "id": "a4-chaos-final",
+      "difficulty": 2,
+      "prompt": "Diablo is fought at the end of which Act IV area?",
+      "choices": [
+        "The River of Flame",
+        "The Chaos Sanctuary",
+        "The Outer Steppes",
+        "The Plains of Despair"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+4",
+      "explanation": "The Chaos Sanctuary holds the five seals that summon Diablo."
+    },
+    {
+      "id": "a4-izual-reward",
+      "difficulty": 2,
+      "prompt": "What reward does Tyrael grant for defeating Izual?",
+      "choices": [
+        "One skill point",
+        "Two skill points",
+        "A free respec",
+        "A set item"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Tyrael grants a remarkable two skill points for freeing Izual's soul."
+    },
+    {
+      "id": "a4-izual-origin",
+      "difficulty": 3,
+      "prompt": "What was Izual before his corruption?",
+      "choices": [
+        "A Horadrim scholar",
+        "A Zakarum zealot",
+        "Tyrael's lieutenant",
+        "A Vizjerei archmage"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Izual was Tyrael's most trusted lieutenant until he was captured by the Prime Evils and twisted."
+    },
+    {
+      "id": "a4-diablo-title",
+      "difficulty": 3,
+      "prompt": "Diablo bears which title?",
+      "choices": ["Lord of Pain", "Lord of Hatred", "Lord of Terror", "Lord of Destruction"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
+      "explanation": "Diablo is the Lord of Terror, the middle brother of the Prime Evils."
+    },
+    {
+      "id": "a4-tyrael",
+      "difficulty": 3,
+      "prompt": "Who is the archangel that grants Izual's reward at Pandemonium Fortress?",
+      "choices": ["Imperius", "Auriel", "Tyrael", "Malthael"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Tyrael, guardian of the soulstones, waits at Pandemonium Fortress and rewards Izual's release."
+    },
+    {
+      "id": "a4-assassin-trees",
+      "difficulty": 4,
+      "prompt": "Which of these is NOT one of the Assassin's three skill trees?",
+      "choices": [
+        "Martial Arts",
+        "Traps",
+        "Shadow Disciplines",
+        "Warcries"
+      ],
+      "answerIndex": 3,
+      "source": "https://diablo2.wiki.fextralife.com/Assassin",
+      "explanation": "Warcries is a Barbarian tree. The Assassin's are Martial Arts, Traps, and Shadow Disciplines."
+    },
+    {
+      "id": "a4-izual-confession",
+      "difficulty": 4,
+      "prompt": "What does Izual confess after his defeat?",
+      "choices": [
+        "That Tyrael planned the betrayal",
+        "That his betrayal was not entirely forced",
+        "That the Worldstone is already shattered",
+        "That Baal still lives in Tal Rasha's tomb"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Izual's dying confession admits his corruption ran deeper than captivity; he gave up Heaven's secrets willingly in part."
+    },
+    {
+      "id": "a4-expansion-classes",
+      "difficulty": 5,
+      "prompt": "Which two classes were added in Lord of Destruction (the Act V expansion)?",
+      "choices": [
+        "Amazon and Paladin",
+        "Assassin and Druid",
+        "Sorceress and Necromancer",
+        "Druid and Barbarian"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Assassin",
+      "explanation": "The Lord of Destruction expansion introduced the Assassin and the Druid alongside Act V."
+    },
+    {
+      "id": "a4-prime-evil-terror",
+      "difficulty": 5,
+      "prompt": "Which Prime Evil opens Act IV's gates by fleeing toward Hell?",
+      "choices": [
+        "Mephisto",
+        "Baal",
+        "Diablo",
+        "Duriel"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
+      "explanation": "Diablo, the Lord of Terror, escapes through Mephisto's portal at the end of Act III, drawing the heroes into Act IV's hellscape."
+    }
+  ]
+}

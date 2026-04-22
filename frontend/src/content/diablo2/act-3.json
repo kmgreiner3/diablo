@@ -1,0 +1,141 @@
+{
+  "actId": 3,
+  "title": "The Infernal Gate",
+  "subtitle": "Kurast Docks · Spider Forest · Travincal",
+  "questions": [
+    {
+      "id": "a3-kurast-docks",
+      "difficulty": 1,
+      "prompt": "What is the Act III town called?",
+      "choices": ["Kurast Docks", "Lut Gholein", "Pandemonium Fortress", "Harrogath"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+3",
+      "explanation": "Act III begins at the Kurast Docks, the last untainted foothold in a jungle corrupted by Mephisto."
+    },
+    {
+      "id": "a3-mephisto-title",
+      "difficulty": 1,
+      "prompt": "Mephisto, the Act III boss, is called the Lord of what?",
+      "choices": ["Lies", "Hatred", "Ruin", "Shadow"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
+      "explanation": "Mephisto is the Lord of Hatred, one of the three Prime Evils alongside Diablo and Baal."
+    },
+    {
+      "id": "a3-khalim-count",
+      "difficulty": 2,
+      "prompt": "How many relics of Khalim must be gathered to form Khalim's Will?",
+      "choices": ["Three", "Four", "Five", "Seven"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Khalim%27s+Will",
+      "explanation": "Four relics (Eye, Brain, Heart, and Flail) are transmuted in the Horadric Cube to form Khalim's Will."
+    },
+    {
+      "id": "a3-khalim-eye",
+      "difficulty": 2,
+      "prompt": "Khalim's Eye is recovered after slaying which Super Unique?",
+      "choices": [
+        "Sszark the Burning",
+        "Icehawk Riftwing",
+        "Witch Doctor Endugu",
+        "Ismail Vilehand"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Khalim%27s+Will",
+      "explanation": "Khalim's Eye lies in the Spider Cavern, guarded by Sszark the Burning."
+    },
+    {
+      "id": "a3-khalim-brain",
+      "difficulty": 3,
+      "prompt": "Khalim's Brain is found on the third level of which dungeon?",
+      "choices": [
+        "Ruined Temple",
+        "Flayer Dungeon",
+        "Sewers of Kurast",
+        "Durance of Hate"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Khalim%27s+Will",
+      "explanation": "Khalim's Brain is taken from Witch Doctor Endugu on Flayer Dungeon Level 3."
+    },
+    {
+      "id": "a3-khalim-heart",
+      "difficulty": 3,
+      "prompt": "Which Super Unique guards Khalim's Heart?",
+      "choices": [
+        "Ismail Vilehand",
+        "Icehawk Riftwing",
+        "Battlemaid Sarina",
+        "Stormtree"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Khalim%27s+Will",
+      "explanation": "Khalim's Heart rests on the second level of the Kurast Sewers, held by Icehawk Riftwing."
+    },
+    {
+      "id": "a3-khalim-flail",
+      "difficulty": 3,
+      "prompt": "Khalim's Flail drops at Travincal from which Council member?",
+      "choices": [
+        "Toorc Icefist",
+        "Geleb Flamefinger",
+        "Ismail Vilehand",
+        "Maffer Dragonhand"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Khalim%27s+Will",
+      "explanation": "Ismail Vilehand of the High Council drops Khalim's Flail at Travincal."
+    },
+    {
+      "id": "a3-necro-trees",
+      "difficulty": 3,
+      "prompt": "Which of the following is one of the Necromancer's three skill trees?",
+      "choices": ["Traps", "Curses", "Warcries", "Martial Arts"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Necromancer",
+      "explanation": "The Necromancer's trees are Curses, Poison and Bone Spells, and Summoning Spells."
+    },
+    {
+      "id": "a3-khalim-purpose",
+      "difficulty": 4,
+      "prompt": "What does Khalim's Will destroy to open the path to Mephisto?",
+      "choices": [
+        "The Worldstone",
+        "The Compelling Orb",
+        "Mephisto's Soulstone",
+        "The Iron Wolves' Seal"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Khalim%27s+Will",
+      "explanation": "The flail shatters the Compelling Orb at Travincal, unsealing the Durance of Hate."
+    },
+    {
+      "id": "a3-paladin-trees",
+      "difficulty": 4,
+      "prompt": "Which of these is NOT one of the Paladin's three skill trees?",
+      "choices": [
+        "Combat Skills",
+        "Defensive Auras",
+        "Offensive Auras",
+        "Elemental Skills"
+      ],
+      "answerIndex": 3,
+      "source": "https://diablo2.wiki.fextralife.com/Paladin",
+      "explanation": "Elemental Skills is a Druid tree. The Paladin's are Combat Skills, Defensive Auras, and Offensive Auras."
+    },
+    {
+      "id": "a3-prime-evils",
+      "difficulty": 5,
+      "prompt": "Mephisto is one of the three Prime Evils. Name his brothers.",
+      "choices": [
+        "Diablo and Baal",
+        "Duriel and Andariel",
+        "Izual and Tyrael",
+        "Baal and Azmodan"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
+      "explanation": "The Prime Evils are Mephisto (Hatred), Diablo (Terror), and Baal (Destruction). Duriel and Andariel are the Lesser Evils."
+    }
+  ]
+}

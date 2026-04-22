@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#2a0606"/>
+      <stop offset="60%" stop-color="#0f0d0a"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#b8942e" stop-opacity="0.28"/>
+      <stop offset="70%" stop-color="#b8942e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Full-bleed background (required for maskable icons) -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="230" fill="url(#glow)"/>
+
+  <!-- Horadric hexagram, centered in safe zone (80% of 512 = ~410 / inset ~51) -->
+  <g transform="translate(256,256)" fill="none" stroke="#8a6d2c" stroke-width="2.5" stroke-linejoin="round">
+    <!-- outer hex -->
+    <polygon points="0,-150 130,-75 130,75 0,150 -130,75 -130,-75"/>
+    <!-- inner hex -->
+    <polygon points="0,-105 90,-52 90,52 0,105 -90,52 -90,-52" opacity="0.7"/>
+    <!-- hexagram triangles -->
+    <polygon points="0,-135 117,68 -117,68" stroke="#4a0e0e" stroke-width="3"/>
+    <polygon points="0,135 -117,-68 117,-68" stroke="#4a0e0e" stroke-width="3"/>
+    <!-- rings -->
+    <circle r="68" opacity="0.6"/>
+    <circle r="150" opacity="0.35"/>
+  </g>
+
+  <!-- Central "II" in Roman, gold, for Diablo II -->
+  <g transform="translate(256,256)" fill="#b8942e" font-family="Cormorant Garamond, Georgia, serif" text-anchor="middle">
+    <text y="28" font-size="110" font-style="italic" font-weight="700">II</text>
+  </g>
+
+  <!-- Subtle blood drip under the II -->
+  <g transform="translate(256,256)" fill="#4a0e0e" opacity="0.9">
+    <circle cx="-10" cy="60" r="4"/>
+    <circle cx="12" cy="72" r="3"/>
+    <circle cx="0" cy="90" r="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,146 @@
+{
+  "actId": 2,
+  "title": "The Secret of the Vizjerei",
+  "subtitle": "Lut Gholein · Tombs of Tal Rasha · Arcane Sanctuary",
+  "questions": [
+    {
+      "id": "a2-lut-gholein",
+      "difficulty": 1,
+      "prompt": "What is the Act II town called?",
+      "choices": ["Kurast Docks", "Lut Gholein", "Harrogath", "Caldeum"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2",
+      "explanation": "Lut Gholein, the largest city in the game, is a sunbaked trading port on the edge of the Twin Seas."
+    },
+    {
+      "id": "a2-duriel-title",
+      "difficulty": 1,
+      "prompt": "Duriel, slain in the tomb beneath the desert, bears which title?",
+      "choices": ["Lord of Terror", "Lord of Pain", "Lord of Hatred", "Lord of Destruction"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Duriel",
+      "explanation": "Duriel, Act II's end boss, is known as the Lord of Pain."
+    },
+    {
+      "id": "a2-radament-where",
+      "difficulty": 2,
+      "prompt": "Where is Radament fought?",
+      "choices": [
+        "The Lost City",
+        "The Sewers beneath Lut Gholein",
+        "The Halls of the Dead",
+        "The Palace Cellar"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Radament",
+      "explanation": "Radament lurks on the third level of the Sewers beneath Lut Gholein."
+    },
+    {
+      "id": "a2-radament-type",
+      "difficulty": 2,
+      "prompt": "Radament is which type of monster?",
+      "choices": [
+        "A Greater Mummy",
+        "A Lesser Evil",
+        "A Scarab Demon",
+        "A Sand Raider"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Radament",
+      "explanation": "Radament is a Super Unique Greater Mummy who heals and resurrects the undead around him."
+    },
+    {
+      "id": "a2-horadric-cube-where",
+      "difficulty": 2,
+      "prompt": "The Horadric Cube is recovered from a chest in which dungeon?",
+      "choices": [
+        "Sewers Level 3",
+        "Halls of the Dead Level 3",
+        "Maggot Lair Level 3",
+        "Ancient Tunnels"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Horadric+Cube",
+      "explanation": "The Cube sits in a chest on the third level of the Halls of the Dead."
+    },
+    {
+      "id": "a2-cube-slots",
+      "difficulty": 3,
+      "prompt": "How many inventory spaces does the Horadric Cube occupy?",
+      "choices": ["6", "8", "12", "16"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Horadric+Cube",
+      "explanation": "The Cube occupies 12 spaces (4 wide by 3 tall)."
+    },
+    {
+      "id": "a2-summoner-where",
+      "difficulty": 3,
+      "prompt": "The Summoner is confronted in which area?",
+      "choices": [
+        "The Arcane Sanctuary",
+        "The Valley of Snakes",
+        "The Canyon of the Magi",
+        "The Claw Viper Temple"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Summoner",
+      "explanation": "The Summoner must be slain in the Arcane Sanctuary to unlock the Canyon of the Magi."
+    },
+    {
+      "id": "a2-sorceress-trees",
+      "difficulty": 3,
+      "prompt": "Which trio names the Sorceress's three skill trees?",
+      "choices": [
+        "Fire, Cold, Lightning",
+        "Fire, Cold, Poison",
+        "Fire, Lightning, Arcane",
+        "Ice, Flame, Storm"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Sorceress",
+      "explanation": "The Sorceress masters Fire, Cold, and Lightning spells."
+    },
+    {
+      "id": "a2-summoner-unlocks",
+      "difficulty": 4,
+      "prompt": "Defeating The Summoner grants access to what?",
+      "choices": [
+        "The Durance of Hate",
+        "The Canyon of the Magi",
+        "The Worldstone Chamber",
+        "The Chaos Sanctuary"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Summoner",
+      "explanation": "Killing the Summoner opens the way to the Canyon of the Magi, where the true tomb of Tal Rasha awaits."
+    },
+    {
+      "id": "a2-surface-areas",
+      "difficulty": 4,
+      "prompt": "Which of these is NOT an Act II surface area?",
+      "choices": [
+        "Rocky Waste",
+        "Far Oasis",
+        "Frozen Tundra",
+        "Valley of Snakes"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2",
+      "explanation": "Frozen Tundra belongs to Act V. Act II's sand-blown sweep runs Rocky Waste, Dry Hills, Far Oasis, Lost City, Valley of Snakes."
+    },
+    {
+      "id": "a2-summoner-mods",
+      "difficulty": 5,
+      "prompt": "Which set of modifiers describes The Summoner?",
+      "choices": [
+        "Extra Fast, Cold Enchanted",
+        "Extra Strong, Extra Fast, resistant to Fire/Cold/Lightning",
+        "Magic Resistant, Lightning Enchanted",
+        "Cursed, Teleportation"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Summoner",
+      "explanation": "The Summoner is Extra Strong, Extra Fast, and resistant to all three elements: Fire, Cold, and Lightning."
+    }
+  ]
+}

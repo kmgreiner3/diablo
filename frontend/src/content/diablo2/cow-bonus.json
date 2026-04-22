@@ -1,0 +1,48 @@
+{
+  "title": "The Secret Cow Level",
+  "subtitle": "Moo · Moo · Moo",
+  "questions": [
+    {
+      "id": "cow-portal-items",
+      "difficulty": 5,
+      "prompt": "To open the portal to the Secret Cow Level, what two items are transmuted in the Horadric Cube?",
+      "choices": [
+        "Wirt's Leg + Tome of Town Portal",
+        "Wirt's Leg + Tome of Identify",
+        "Horadric Staff + Tome of Town Portal",
+        "Khalim's Will + Tome of Town Portal"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Secret+Cow+Level",
+      "explanation": "In the Rogue Encampment after finishing that difficulty, cube Wirt's Leg plus a Tome of Town Portal to tear open the red portal."
+    },
+    {
+      "id": "cow-king-type",
+      "difficulty": 5,
+      "prompt": "The Cow King is a Super Unique of which monster type?",
+      "choices": [
+        "Greater Mummy",
+        "Corrupt Rogue",
+        "Hell Bovine",
+        "Fallen Shaman"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/The+Cow+King",
+      "explanation": "The Cow King is a Hell Bovine carrying Magic Resistant and Lightning Enchanted modifiers."
+    },
+    {
+      "id": "cow-one-shot",
+      "difficulty": 5,
+      "prompt": "What happens once a character slays The Cow King on a difficulty?",
+      "choices": [
+        "The portal spawns a harder cow king",
+        "The character can never reopen the Cow Level portal on that difficulty",
+        "All cows drop a rune on the next kill",
+        "Wirt's Leg is consumed permanently"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Secret+Cow+Level",
+      "explanation": "Killing the Cow King on a difficulty permanently seals the portal for that character; no more cow runs on that difficulty."
+    }
+  ]
+}

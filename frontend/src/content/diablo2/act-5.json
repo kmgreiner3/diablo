@@ -1,0 +1,151 @@
+{
+  "actId": 5,
+  "title": "Lord of Destruction",
+  "subtitle": "Harrogath · Arreat Plateau · Worldstone Keep",
+  "questions": [
+    {
+      "id": "a5-harrogath",
+      "difficulty": 1,
+      "prompt": "What is the Act V town called?",
+      "choices": ["Pandemonium Fortress", "Harrogath", "Lut Gholein", "Sescheron"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+5",
+      "explanation": "Harrogath is the last Barbarian stronghold, besieged at the foot of Mount Arreat."
+    },
+    {
+      "id": "a5-baal-title",
+      "difficulty": 1,
+      "prompt": "Baal is the Lord of what?",
+      "choices": ["Pain", "Destruction", "Hatred", "Ruin"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Baal",
+      "explanation": "Baal is the Lord of Destruction, the final Prime Evil and namesake of the expansion."
+    },
+    {
+      "id": "a5-baal-where",
+      "difficulty": 2,
+      "prompt": "Baal is fought at the end of which area?",
+      "choices": [
+        "Arreat Plateau",
+        "Worldstone Keep",
+        "Halls of Anguish",
+        "Chaos Sanctuary"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Baal",
+      "explanation": "Baal holds the Worldstone Keep atop Mount Arreat, in the Throne of Destruction chamber."
+    },
+    {
+      "id": "a5-defenders",
+      "difficulty": 2,
+      "prompt": "Harrogath is held by defenders of which people?",
+      "choices": [
+        "The Iron Wolves",
+        "The Barbarians",
+        "The Zakarum",
+        "The Horadrim"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+5",
+      "explanation": "Harrogath is the last stronghold held by Barbarian defenders."
+    },
+    {
+      "id": "a5-nihlathak-role",
+      "difficulty": 3,
+      "prompt": "What role does Nihlathak fill in Harrogath?",
+      "choices": [
+        "Blacksmith",
+        "Gambling merchant",
+        "Mercenary captain",
+        "Priestess of the flame"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Nihlathak",
+      "explanation": "Nihlathak serves as the gambling merchant in Harrogath: 'The siege has everything in short supply…except fools.'"
+    },
+    {
+      "id": "a5-barbarian-trees",
+      "difficulty": 3,
+      "prompt": "Which of these is one of the Barbarian's three skill trees?",
+      "choices": [
+        "Shape Shifting",
+        "Warcries",
+        "Curses",
+        "Traps"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Barbarian",
+      "explanation": "The Barbarian's trees are Combat Masteries, Combat Skills, and Warcries."
+    },
+    {
+      "id": "a5-arreat",
+      "difficulty": 3,
+      "prompt": "Mount Arreat protects what sacred object at its peak?",
+      "choices": [
+        "The Compelling Orb",
+        "The Worldstone",
+        "The Black Soulstone",
+        "The Eye of Anu"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Baal",
+      "explanation": "Mount Arreat hides the Worldstone, a fragment of creation that the Barbarians have sworn for generations to guard."
+    },
+    {
+      "id": "a5-druid-trees",
+      "difficulty": 4,
+      "prompt": "Which of these is NOT one of the Druid's three skill trees?",
+      "choices": [
+        "Elemental",
+        "Shape Shifting",
+        "Summoning",
+        "Combat Masteries"
+      ],
+      "answerIndex": 3,
+      "source": "https://diablo2.wiki.fextralife.com/Druid",
+      "explanation": "Combat Masteries belongs to the Barbarian. The Druid's trees are Elemental, Shape Shifting, and Summoning."
+    },
+    {
+      "id": "a5-baal-number",
+      "difficulty": 4,
+      "prompt": "Among the three Prime Evils, Baal is the…",
+      "choices": [
+        "Eldest brother",
+        "Middle brother",
+        "Youngest brother",
+        "Only son"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
+      "explanation": "Mephisto is eldest (Hatred), Diablo is middle (Terror), Baal is youngest (Destruction)."
+    },
+    {
+      "id": "a5-surface-act5",
+      "difficulty": 5,
+      "prompt": "Which of these is an Act V surface area?",
+      "choices": [
+        "Far Oasis",
+        "Frozen Tundra",
+        "Flayer Jungle",
+        "Spider Forest"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+5",
+      "explanation": "The Frozen Tundra, Arreat Plateau, and Bloody Foothills all belong to Act V's mountain siege."
+    },
+    {
+      "id": "a5-siege-quote",
+      "difficulty": 5,
+      "prompt": "Which quote belongs to Nihlathak?",
+      "choices": [
+        "'Stay a while, and listen.'",
+        "'The siege has everything in short supply…except fools.'",
+        "'Hello, my friend. Stay awhile and rest.'",
+        "'Not even death can save you from me.'"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Nihlathak",
+      "explanation": "Nihlathak's bitter greeting as the gambler of Harrogath marks him as more cynical than the other elders."
+    }
+  ]
+}

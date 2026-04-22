@@ -1,0 +1,150 @@
+{
+  "actId": 1,
+  "title": "The Sightless Eye",
+  "subtitle": "Rogue Encampment · Monastery · Blood Moor",
+  "questions": [
+    {
+      "id": "a1-rogue-encampment",
+      "difficulty": 1,
+      "prompt": "What is the Act I town called?",
+      "choices": ["Lut Gholein", "Rogue Encampment", "Harrogath", "Kurast Docks"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+1",
+      "explanation": "Act I opens at the Rogue Encampment, a town within a fortress held by the Sisterhood of the Sightless Eye."
+    },
+    {
+      "id": "a1-charsi",
+      "difficulty": 1,
+      "prompt": "Charsi, who repairs your gear in the Rogue Encampment, serves which trade?",
+      "choices": ["Scribe", "Blacksmith", "Alchemist", "Mercenary captain"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Charsi",
+      "explanation": "Charsi is the blacksmith of the Rogue Encampment and a member of the Sisterhood of the Sightless Eye."
+    },
+    {
+      "id": "a1-den-akara",
+      "difficulty": 1,
+      "prompt": "Who gives the Den of Evil quest?",
+      "choices": ["Kashya", "Warriv", "Akara", "Gheed"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Den+of+Evil",
+      "explanation": "Akara, the Priestess of the Sightless Eye, tasks you with clearing the Den of Evil."
+    },
+    {
+      "id": "a1-andariel-act",
+      "difficulty": 2,
+      "prompt": "Andariel, the Maiden of Anguish, is the end boss of which act?",
+      "choices": ["Act I", "Act II", "Act III", "Act V"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Andariel",
+      "explanation": "Andariel is the final boss of Act I and one of the Lesser Evils."
+    },
+    {
+      "id": "a1-den-reward",
+      "difficulty": 2,
+      "prompt": "The Den of Evil reward includes a skill point and what else?",
+      "choices": [
+        "A free respecialization",
+        "A free Tome of Town Portal",
+        "A Horadric Cube",
+        "A mercenary"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Den+of+Evil",
+      "explanation": "Den of Evil grants +1 skill point and one free respec of your stats and skills."
+    },
+    {
+      "id": "a1-blood-raven-type",
+      "difficulty": 2,
+      "prompt": "Blood Raven, fought in the Burial Grounds, is what kind of enemy?",
+      "choices": [
+        "A Greater Mummy",
+        "A Fallen Shaman",
+        "A Corrupt Rogue Archer",
+        "A Succubus"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Blood+Raven",
+      "explanation": "Blood Raven was a Rogue of the Sightless Eye, corrupted by Andariel into a Corrupt Rogue Archer who can summon zombies."
+    },
+    {
+      "id": "a1-countess-tower",
+      "difficulty": 3,
+      "prompt": "Where is The Countess found?",
+      "choices": [
+        "The Forgotten Tower",
+        "The Halls of the Dead",
+        "The Arcane Sanctuary",
+        "The Pit"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/The+Countess",
+      "explanation": "The Countess waits at the bottom of the Forgotten Tower in the Black Marsh."
+    },
+    {
+      "id": "a1-countess-drop",
+      "difficulty": 3,
+      "prompt": "The Countess is most famous among farmers for guaranteeing a drop of what?",
+      "choices": [
+        "Set items",
+        "Runes",
+        "Gems",
+        "Unique jewels"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/The+Countess",
+      "explanation": "She has a 100% chance to drop 1–3 runes per kill, scaling up to Lo runes on Hell difficulty."
+    },
+    {
+      "id": "a1-amazon-trees",
+      "difficulty": 3,
+      "prompt": "Which of these is NOT one of the Amazon's three skill trees?",
+      "choices": [
+        "Bow and Crossbow",
+        "Javelin and Spear",
+        "Passive and Magic",
+        "Shadow Disciplines"
+      ],
+      "answerIndex": 3,
+      "source": "https://diablo2.wiki.fextralife.com/Amazon",
+      "explanation": "Shadow Disciplines belongs to the Assassin. The Amazon's trees are Bow and Crossbow, Javelin and Spear, and Passive and Magic."
+    },
+    {
+      "id": "a1-andariel-weakness",
+      "difficulty": 4,
+      "prompt": "Andariel has a gaping -50 resistance to which element across all difficulties?",
+      "choices": ["Cold", "Lightning", "Fire", "Poison"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Andariel",
+      "explanation": "Andariel's Maiden of Anguish frame burns fast in fire; she carries -50 fire resistance at every difficulty."
+    },
+    {
+      "id": "a1-sisterhood",
+      "difficulty": 4,
+      "prompt": "Blood Raven was once a member of which order before Andariel's corruption?",
+      "choices": [
+        "The Sisterhood of the Sightless Eye",
+        "The Vizjerei",
+        "The Zakarum",
+        "The Horadrim"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Blood+Raven",
+      "explanation": "Blood Raven served in the Sisterhood of the Sightless Eye (the same order Akara, Kashya, and Charsi belong to) before her fall."
+    },
+    {
+      "id": "a1-blood-raven-modifier",
+      "difficulty": 5,
+      "prompt": "Which modifier does Blood Raven carry that lights up her arrows?",
+      "choices": [
+        "Cold Enchanted",
+        "Fire Arrow",
+        "Extra Fast",
+        "Lightning Enchanted"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Blood+Raven",
+      "explanation": "Blood Raven carries the Fire Arrow modifier; hence the streaks of flame she draws across the Burial Grounds."
+    }
+  ]
+}
