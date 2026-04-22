@@ -110,11 +110,11 @@ export function Bonus() {
       </div>
 
       <div
-        className={`relative paper-grain bg-vellum text-ink rounded-sm p-10 border-2 border-oxblood shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed ${isWrong ? "shake" : ""}`}
+        className={`relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-10 border-2 border-oxblood shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed ${isWrong ? "shake" : ""}`}
       >
-        <div className="font-display text-3xl italic text-ink">{q.prompt}</div>
+        <div className="font-display text-2xl md:text-3xl italic text-ink">{q.prompt}</div>
         <div className="rule-gold my-5 opacity-60" />
-        <div className="grid md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {q.choices.map((c, i) => {
             const chosen = picked === i;
             const revealCorrect = picked !== null && i === q.answerIndex;
@@ -143,9 +143,9 @@ export function Bonus() {
         </div>
 
         {picked !== null && (
-          <div className="mt-8 pt-6 border-t border-ink/10 flex items-start gap-6">
+          <div className="mt-6 md:mt-8 pt-6 border-t border-ink/10 flex flex-col md:flex-row items-start gap-4 md:gap-6">
             <div
-              className={`seal-stamp shrink-0 w-24 h-24 rounded-full flex items-center justify-center font-display italic border-2 ${isCorrect ? "border-gold text-gold bg-gold/5" : "border-oxblood text-oxblood bg-oxblood/5"}`}
+              className={`seal-stamp shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center font-display italic border-2 ${isCorrect ? "border-gold text-gold bg-gold/5" : "border-oxblood text-oxblood bg-oxblood/5"}`}
             >
               <div className="text-center leading-none">
                 <div className="text-xl">{isCorrect ? "Veritas" : "Errare"}</div>
@@ -170,7 +170,7 @@ export function Bonus() {
             </div>
             <button
               onClick={() => nav("/summary")}
-              className="self-end bg-ink text-vellum-light hover:bg-oxblood-deep px-6 py-3 font-mono uppercase tracking-widest text-xs border border-gold/40"
+              className="w-full md:w-auto md:self-end bg-ink text-vellum-light hover:bg-oxblood-deep px-6 py-3 font-mono uppercase tracking-widest text-xs border border-gold/40"
             >
               Tally →
             </button>

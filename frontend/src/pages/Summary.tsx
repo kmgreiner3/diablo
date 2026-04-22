@@ -40,7 +40,7 @@ export function Summary() {
     "Footman of the Fallen";
 
   return (
-    <div className="relative paper-grain bg-vellum text-ink rounded-sm p-12 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] text-center ink-bleed">
+    <div className="relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-12 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] text-center ink-bleed">
       <div className="font-mono uppercase tracking-[0.4em] text-oxblood/70 text-xs">
         The Grand Tour · {dateKey}
       </div>
@@ -49,7 +49,7 @@ export function Summary() {
         {username}, the {epithet}
       </div>
 
-      <div className="mt-8 font-display text-8xl text-oxblood leading-none">
+      <div className="mt-6 md:mt-8 font-display text-6xl md:text-8xl text-oxblood leading-none">
         {total}
       </div>
       <div className="mt-2 font-mono uppercase tracking-widest text-xs text-ink/60">
@@ -65,16 +65,16 @@ export function Summary() {
 
       <DecorativeDivider />
 
-      <div className="grid grid-cols-5 gap-3 max-w-2xl mx-auto">
+      <div className="grid grid-cols-5 gap-2 md:gap-3 max-w-2xl mx-auto">
         {actProgress.map((a) => (
-          <div key={a.actId} className="border border-ink/20 p-3">
-            <div className="font-mono uppercase tracking-widest text-[10px] text-ink/50">
+          <div key={a.actId} className="border border-ink/20 p-2 md:p-3">
+            <div className="font-mono uppercase tracking-widest text-[9px] md:text-[10px] text-ink/50">
               Act {toRoman(a.actId)}
             </div>
-            <div className="font-display text-3xl italic text-ink mt-1">
-              {a.correct}<span className="text-ink-faded/40 text-lg">/{QUESTIONS_PER_ACT}</span>
+            <div className="font-display text-xl md:text-3xl italic text-ink mt-1">
+              {a.correct}<span className="text-ink-faded/40 text-sm md:text-lg">/{QUESTIONS_PER_ACT}</span>
             </div>
-            <div className="font-mono text-[10px] text-ink/40">
+            <div className="font-mono text-[9px] md:text-[10px] text-ink/40">
               {Math.round(a.durationMs / 1000)}s
             </div>
           </div>

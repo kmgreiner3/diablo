@@ -20,7 +20,7 @@ export function Waypoint() {
   }, [allDone, nav]);
 
   return (
-    <div className="relative paper-grain bg-vellum text-ink rounded-sm p-12 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed text-center">
+    <div className="relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-12 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed text-center">
       <div className="font-mono uppercase tracking-[0.4em] text-oxblood/70 text-xs">
         Waypoint Activated
       </div>
@@ -28,7 +28,7 @@ export function Waypoint() {
       <div className="font-display italic text-3xl text-ink-faded">
         Act {toRoman(fromNum)} concluded
       </div>
-      <div className="mt-4 font-display text-7xl text-oxblood leading-none">
+      <div className="mt-4 font-display text-5xl md:text-7xl text-oxblood leading-none">
         {just?.correct ?? 0}
         <span className="text-ink-faded/40">/{QUESTIONS_PER_ACT}</span>
       </div>
@@ -43,7 +43,7 @@ export function Waypoint() {
           <div className="font-mono uppercase tracking-[0.3em] text-[10px] text-ink/50">
             Teleporting to
           </div>
-          <div className="font-display italic text-4xl text-ink mt-2">
+          <div className="font-display italic text-2xl md:text-4xl text-ink mt-2">
             Act {toRoman(nextNum)} · {nextBank.title}
           </div>
           <div className="font-body text-ink-faded italic mt-1">{nextBank.subtitle}</div>

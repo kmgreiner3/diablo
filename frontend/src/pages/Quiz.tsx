@@ -109,9 +109,9 @@ export function Quiz() {
 
       <div
         key={q.id}
-        className={`relative paper-grain bg-vellum text-ink rounded-sm p-10 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed ${isWrong ? "shake" : ""}`}
+        className={`relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-10 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed ${isWrong ? "shake" : ""}`}
       >
-        <div className="grid md:grid-cols-[1fr_auto_1.2fr] gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1.2fr] gap-6 md:gap-8 items-start">
           <div>
             <div className="flex items-baseline gap-3 mb-4">
               <IlluminatedNumber n={idx + 1} />
@@ -120,7 +120,7 @@ export function Quiz() {
               </div>
             </div>
             <div className="rule-gold mb-5 opacity-60" />
-            <p className="font-display text-3xl italic leading-snug text-ink">{q.prompt}</p>
+            <p className="font-display text-2xl md:text-3xl italic leading-snug text-ink">{q.prompt}</p>
           </div>
 
           <div className="hidden md:block w-px self-stretch bg-gold/40" />
@@ -158,9 +158,9 @@ export function Quiz() {
         </div>
 
         {picked !== null && (
-          <div className="mt-8 pt-6 border-t border-ink/10 flex items-start gap-6">
+          <div className="mt-6 md:mt-8 pt-6 border-t border-ink/10 flex flex-col md:flex-row items-start gap-4 md:gap-6">
             <div
-              className={`seal-stamp shrink-0 w-20 h-20 rounded-full flex items-center justify-center font-display text-2xl italic border-2 ${isCorrect ? "border-gold text-gold bg-gold/5" : "border-oxblood text-oxblood bg-oxblood/5"}`}
+              className={`seal-stamp shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center font-display text-xl md:text-2xl italic border-2 ${isCorrect ? "border-gold text-gold bg-gold/5" : "border-oxblood text-oxblood bg-oxblood/5"}`}
             >
               {isCorrect ? "Veritas" : "Errare"}
             </div>
@@ -180,7 +180,7 @@ export function Quiz() {
             </div>
             <button
               onClick={next}
-              className="self-end bg-ink text-vellum-light hover:bg-oxblood-deep px-6 py-3 font-mono uppercase tracking-widest text-xs border border-gold/40"
+              className="w-full md:w-auto md:self-end bg-ink text-vellum-light hover:bg-oxblood-deep px-6 py-3 font-mono uppercase tracking-widest text-xs border border-gold/40"
             >
               {isLast ? "Conclude Act →" : "Next →"}
             </button>

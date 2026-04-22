@@ -30,7 +30,7 @@ export function Home() {
 
   return (
     <div className="space-y-10">
-      <section className="relative paper-grain bg-vellum text-ink rounded-sm px-10 py-10 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] border border-gold/40">
+      <section className="relative paper-grain bg-vellum text-ink rounded-sm px-6 py-8 md:px-10 md:py-10 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] border border-gold/40">
         <CornerFlourish className="absolute top-3 left-3 w-10 h-10 text-oxblood" />
         <CornerFlourish className="absolute top-3 right-3 w-10 h-10 text-oxblood scale-x-[-1]" />
         <CornerFlourish className="absolute bottom-3 left-3 w-10 h-10 text-oxblood scale-y-[-1]" />
@@ -104,7 +104,7 @@ export function Home() {
                 disabled={locked || done || !draft.trim()}
                 onClick={() => start(bank.actId)}
                 className={[
-                  "relative text-left p-5 border transition-all aspect-[3/4] flex flex-col justify-between group",
+                  "relative text-left p-5 border transition-all min-h-[160px] lg:aspect-[3/4] flex flex-row lg:flex-col justify-between items-center lg:items-stretch gap-4 lg:gap-0 group",
                   locked
                     ? "border-vellum/20 bg-ink/30 text-vellum/30 cursor-not-allowed"
                     : done

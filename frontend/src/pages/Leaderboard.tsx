@@ -17,7 +17,7 @@ export function Leaderboard() {
   }, [quizId]);
 
   return (
-    <div className="relative paper-grain bg-vellum text-ink rounded-sm p-10 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)]">
+    <div className="relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-10 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)]">
       <div className="text-center">
         <div className="font-mono uppercase tracking-[0.4em] text-oxblood/70 text-xs">
           Ledger of Bearers
@@ -39,7 +39,7 @@ export function Leaderboard() {
         </div>
       ) : (
         <div className="max-w-2xl mx-auto">
-          <div className="grid grid-cols-[40px_1fr_80px_100px] gap-4 font-mono uppercase tracking-widest text-[10px] text-ink/50 pb-2 border-b border-ink/20">
+          <div className="grid grid-cols-[28px_1fr_60px_60px] md:grid-cols-[40px_1fr_80px_100px] gap-2 md:gap-4 font-mono uppercase tracking-widest text-[9px] md:text-[10px] text-ink/50 pb-2 border-b border-ink/20">
             <div>#</div>
             <div>bearer</div>
             <div className="text-right">score</div>
@@ -50,12 +50,12 @@ export function Leaderboard() {
             return (
               <div
                 key={`${e.username}-${e.timestamp}`}
-                className={`grid grid-cols-[40px_1fr_80px_100px] gap-4 py-3 border-b border-ink/10 items-baseline ${mine ? "bg-gold/10" : ""}`}
+                className={`grid grid-cols-[28px_1fr_60px_60px] md:grid-cols-[40px_1fr_80px_100px] gap-2 md:gap-4 py-3 border-b border-ink/10 items-baseline ${mine ? "bg-gold/10" : ""}`}
               >
-                <div className="font-display italic text-2xl text-oxblood">
+                <div className="font-display italic text-xl md:text-2xl text-oxblood">
                   {i + 1}
                 </div>
-                <div className="font-display text-xl text-ink">
+                <div className="font-display text-base md:text-xl text-ink truncate">
                   {e.username}
                   {mine && (
                     <span className="ml-2 font-mono text-[9px] uppercase tracking-widest text-oxblood">
@@ -63,10 +63,10 @@ export function Leaderboard() {
                     </span>
                   )}
                 </div>
-                <div className="text-right font-mono text-lg text-ink">
+                <div className="text-right font-mono text-base md:text-lg text-ink">
                   {e.score}
                 </div>
-                <div className="text-right font-mono text-sm text-ink/60">
+                <div className="text-right font-mono text-xs md:text-sm text-ink/60">
                   {Math.round(e.durationMs / 1000)}s
                 </div>
               </div>
