@@ -14,11 +14,15 @@ export function todayKey(d = new Date()): string {
 
 // Days since 2026-01-01 (New York). Used as the cycle index so partitions
 // advance by exactly one per calendar day, regardless of timezone of the viewer.
+// DAY_OFFSET is a permanent shift of the whole cycle. Bump it by +1 when the
+// authored content replaces a day's slice in-place (so users don't see the
+// questions they already played on that date).
+const DAY_OFFSET = 1;
 export function dayIndex(dateKey: string): number {
   const epoch = Date.UTC(2026, 0, 1);
   const [y, m, d] = dateKey.split("-").map(Number);
   const today = Date.UTC(y, m - 1, d);
-  return Math.floor((today - epoch) / 86_400_000);
+  return Math.floor((today - epoch) / 86_400_000) + DAY_OFFSET;
 }
 
 // xmur3 string hash -> seed
