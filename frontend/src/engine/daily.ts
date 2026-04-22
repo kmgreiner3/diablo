@@ -12,6 +12,15 @@ export function todayKey(d = new Date()): string {
   return f.format(d);
 }
 
+// Days since 2026-01-01 (New York). Used as the cycle index so partitions
+// advance by exactly one per calendar day, regardless of timezone of the viewer.
+export function dayIndex(dateKey: string): number {
+  const epoch = Date.UTC(2026, 0, 1);
+  const [y, m, d] = dateKey.split("-").map(Number);
+  const today = Date.UTC(y, m - 1, d);
+  return Math.floor((today - epoch) / 86_400_000);
+}
+
 // xmur3 string hash -> seed
 function xmur3(str: string): () => number {
   let h = 1779033703 ^ str.length;
@@ -36,7 +45,12 @@ function mulberry32(seed: number): () => number {
   };
 }
 
-function seededShuffle<T>(arr: T[], seed: string): T[] {
+/**
+ * Stable shuffle using a fixed seed derived from the bank key. Same bank key
+ * always produces the same shuffle, so the cycle order is deterministic per
+ * bank but unpredictable from the JSON order in the repo.
+ */
+function stableShuffle<T>(arr: T[], seed: string): T[] {
   const s = xmur3(seed)();
   const rand = mulberry32(s);
   const out = arr.slice();
@@ -48,8 +62,14 @@ function seededShuffle<T>(arr: T[], seed: string): T[] {
 }
 
 /**
- * Pick N questions from a bank for a given day, then sort by difficulty ascending
- * so the quiz ramps. Deterministic: same (bankKey, dateKey, n) -> same picks.
+ * Cycle-based daily pick: partition the bank into non-overlapping windows of
+ * size `n` and advance one window per day. No question repeats within a cycle
+ * (cycle length = ceil(bankSize / n) days).
+ *
+ * If the bank isn't a clean multiple of `n`, the last window wraps around to
+ * the beginning of the shuffled bank, which briefly allows a question to
+ * appear twice at the wrap boundary. For our configured bank of 15 with n=5
+ * this divides cleanly, so no wrap overlap occurs.
  */
 export function pickDaily(
   questions: Question[],
@@ -57,17 +77,29 @@ export function pickDaily(
   dateKey: string,
   n: number
 ): Question[] {
-  const shuffled = seededShuffle(questions, `${dateKey}|${bankKey}`);
-  const picked = shuffled.slice(0, Math.min(n, shuffled.length));
-  return picked.sort((a, b) => a.difficulty - b.difficulty);
+  if (questions.length === 0) return [];
+  const order = stableShuffle(questions, bankKey);
+  const len = order.length;
+  const cycleLength = Math.max(1, Math.ceil(len / n));
+  const di = ((dayIndex(dateKey) % cycleLength) + cycleLength) % cycleLength;
+  const start = di * n;
+  const slice: Question[] = [];
+  for (let i = 0; i < Math.min(n, len); i++) {
+    slice.push(order[(start + i) % len]);
+  }
+  return slice.sort((a, b) => a.difficulty - b.difficulty);
 }
 
-/** Pick exactly one bonus question deterministically per day. */
+/**
+ * Cycle-based bonus pick: one question per day, advancing one per day through
+ * a stable-shuffled bank. Cycle length = bank size days.
+ */
 export function pickDailyBonus(
   questions: Question[],
   bankKey: string,
   dateKey: string
 ): Question {
-  const [q] = seededShuffle(questions, `bonus|${dateKey}|${bankKey}`);
-  return q;
+  const order = stableShuffle(questions, `bonus|${bankKey}`);
+  const di = ((dayIndex(dateKey) % order.length) + order.length) % order.length;
+  return order[di];
 }
