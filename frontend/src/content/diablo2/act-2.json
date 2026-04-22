@@ -142,13 +142,13 @@
       "explanation": "Drognan and Lord Jerhyn together send you to find Horazon's Sanctuary in search of Tal Rasha's tomb."
     },
     {
-      "id": "a2-tal-rasha-baal",
+      "id": "a2-horazon",
       "difficulty": 5,
-      "prompt": "Tal Rasha, last of the Horadrim, sealed himself in his tomb with which demon?",
-      "choices": ["Andariel", "Duriel", "Baal", "Mephisto"],
-      "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Tal+Rasha",
-      "explanation": "Tal Rasha bound himself with Baal, the Lord of Destruction, to contain him."
+      "prompt": "The Arcane Sanctuary quest sends you to find whose sanctuary?",
+      "choices": ["Horazon's", "Zoltun Kulle's", "Bartuc's", "Lam Esen's"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Drognan and Lord Jerhyn task you with finding Horazon's Sanctuary, which leads to Tal Rasha's Tomb."
     },
     {
       "id": "a2-drognan-andariel",
