@@ -4,143 +4,179 @@
   "subtitle": "Pandemonium Fortress · Plains of Despair · Chaos Sanctuary",
   "questions": [
     {
-      "id": "a4-pandemonium",
+      "id": "a4-pandemonium-outpost",
       "difficulty": 1,
-      "prompt": "What is the Act IV town called?",
-      "choices": ["Harrogath", "Pandemonium Fortress", "Kurast Docks", "Tristram"],
-      "answerIndex": 1,
+      "prompt": "Pandemonium Fortress is described as the last outpost of what?",
+      "choices": ["Heaven", "the Horadrim", "Sanctuary", "the Zakarum"],
+      "answerIndex": 0,
       "source": "https://diablo2.wiki.fextralife.com/Act+4",
-      "explanation": "Pandemonium Fortress is the last outpost of Heaven at the gates of Hell."
+      "explanation": "Pandemonium Fortress is 'the last outpost of Heaven at the gates of Hell.'"
     },
     {
-      "id": "a4-izual-plains",
-      "difficulty": 1,
-      "prompt": "Izual, the fallen angel, is hunted across which area?",
-      "choices": [
-        "Chaos Sanctuary",
-        "Plains of Despair",
-        "River of Flame",
-        "City of the Damned"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Izual",
-      "explanation": "Izual wanders the Plains of Despair as part of the Fallen Angel quest."
-    },
-    {
-      "id": "a4-chaos-final",
+      "id": "a4-act4-quest-count",
       "difficulty": 2,
-      "prompt": "Diablo is fought at the end of which Act IV area?",
-      "choices": [
-        "The River of Flame",
-        "The Chaos Sanctuary",
-        "The Outer Steppes",
-        "The Plains of Despair"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Act+4",
-      "explanation": "The Chaos Sanctuary holds the five seals that summon Diablo."
+      "prompt": "How many quests does Act IV contain?",
+      "choices": ["Three", "Four", "Five", "Six"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+4+Quests",
+      "explanation": "Act IV is the shortest act: Fallen Angel, Hell's Forge, and Terror's End."
     },
     {
-      "id": "a4-izual-reward",
+      "id": "a4-halbu",
       "difficulty": 2,
-      "prompt": "What reward does Tyrael grant for defeating Izual?",
+      "prompt": "Who is the Act IV blacksmith at Pandemonium Fortress?",
+      "choices": ["Larzuk", "Halbu", "Hratli", "Fara"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Halbu",
+      "explanation": "Halbu sells weapons and armor at Pandemonium Fortress and repairs gear."
+    },
+    {
+      "id": "a4-jamella-roles",
+      "difficulty": 3,
+      "prompt": "Jamella of Pandemonium Fortress is a...",
       "choices": [
-        "One skill point",
-        "Two skill points",
-        "A free respec",
-        "A set item"
+        "Blacksmith and mercenary captain",
+        "Merchant, healer, and gambler",
+        "Scribe and sage",
+        "Priestess and mercenary"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Izual",
-      "explanation": "Tyrael grants a remarkable two skill points for freeing Izual's soul."
+      "source": "https://diablo2.wiki.fextralife.com/Jamella",
+      "explanation": "Jamella is listed as Merchant, Healer, and Gambler at Pandemonium Fortress."
     },
     {
-      "id": "a4-izual-origin",
+      "id": "a4-hellforge-giver",
       "difficulty": 3,
-      "prompt": "What was Izual before his corruption?",
+      "prompt": "Who gives the Hell's Forge quest in Act IV?",
+      "choices": ["Tyrael", "Jamella", "Deckard Cain", "Halbu"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Act+4+Quests",
+      "explanation": "Deckard Cain directs you to the Hellforge to destroy Mephisto's Soulstone."
+    },
+    {
+      "id": "a4-hellforge-destroys",
+      "difficulty": 3,
+      "prompt": "The Hellforge quest requires you to destroy which object?",
       "choices": [
-        "A Horadrim scholar",
-        "A Zakarum zealot",
-        "Tyrael's lieutenant",
-        "A Vizjerei archmage"
+        "The Worldstone",
+        "Diablo's Soulstone",
+        "Mephisto's Soulstone",
+        "The Compelling Orb"
       ],
       "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Izual",
-      "explanation": "Izual was Tyrael's most trusted lieutenant until he was captured by the Prime Evils and twisted."
+      "source": "https://diablo2.wiki.fextralife.com/Act+4+Quests",
+      "explanation": "Mephisto's Soulstone, carried from the Durance of Hate, is shattered on the Hellforge anvil."
     },
     {
-      "id": "a4-diablo-title",
+      "id": "a4-tyrael-archangel",
       "difficulty": 3,
-      "prompt": "Diablo bears which title?",
-      "choices": ["Lord of Pain", "Lord of Hatred", "Lord of Terror", "Lord of Destruction"],
-      "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
-      "explanation": "Diablo is the Lord of Terror, the middle brother of the Prime Evils."
+      "prompt": "Tyrael introduces himself as which kind of being?",
+      "choices": [
+        "An Archangel",
+        "A Prime Evil",
+        "A Horadrim",
+        "An Ancient"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Tyrael",
+      "explanation": "Tyrael says: 'I am the Archangel Tyrael. I came here to prevent Diablo from freeing his brother, Baal.'"
     },
     {
-      "id": "a4-tyrael",
-      "difficulty": 3,
-      "prompt": "Who is the archangel that grants Izual's reward at Pandemonium Fortress?",
-      "choices": ["Imperius", "Auriel", "Tyrael", "Malthael"],
-      "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Izual",
-      "explanation": "Tyrael, guardian of the soulstones, waits at Pandemonium Fortress and rewards Izual's release."
-    },
-    {
-      "id": "a4-assassin-trees",
+      "id": "a4-tyrael-first-appearance",
       "difficulty": 4,
-      "prompt": "Which of these is NOT one of the Assassin's three skill trees?",
+      "prompt": "Players first encounter Tyrael after completing which Act II quest?",
       "choices": [
-        "Martial Arts",
-        "Traps",
-        "Shadow Disciplines",
-        "Warcries"
-      ],
-      "answerIndex": 3,
-      "source": "https://diablo2.wiki.fextralife.com/Assassin",
-      "explanation": "Warcries is a Barbarian tree. The Assassin's are Martial Arts, Traps, and Shadow Disciplines."
-    },
-    {
-      "id": "a4-izual-confession",
-      "difficulty": 4,
-      "prompt": "What does Izual confess after his defeat?",
-      "choices": [
-        "That Tyrael planned the betrayal",
-        "That his betrayal was not entirely forced",
-        "That the Worldstone is already shattered",
-        "That Baal still lives in Tal Rasha's tomb"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Izual",
-      "explanation": "Izual's dying confession admits his corruption ran deeper than captivity; he gave up Heaven's secrets willingly in part."
-    },
-    {
-      "id": "a4-expansion-classes",
-      "difficulty": 5,
-      "prompt": "Which two classes were added in Lord of Destruction (the Act V expansion)?",
-      "choices": [
-        "Amazon and Paladin",
-        "Assassin and Druid",
-        "Sorceress and Necromancer",
-        "Druid and Barbarian"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Assassin",
-      "explanation": "The Lord of Destruction expansion introduced the Assassin and the Druid alongside Act V."
-    },
-    {
-      "id": "a4-prime-evil-terror",
-      "difficulty": 5,
-      "prompt": "Which Prime Evil opens Act IV's gates by fleeing toward Hell?",
-      "choices": [
-        "Mephisto",
-        "Baal",
-        "Diablo",
-        "Duriel"
+        "Radament's Lair",
+        "The Arcane Sanctuary",
+        "The Seven Tombs",
+        "The Summoner"
       ],
       "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
-      "explanation": "Diablo, the Lord of Terror, escapes through Mephisto's portal at the end of Act III, drawing the heroes into Act IV's hellscape."
+      "source": "https://diablo2.wiki.fextralife.com/Tyrael",
+      "explanation": "Tyrael is rescued upon completing The Seven Tombs (the Duriel fight) and later reappears at Pandemonium."
+    },
+    {
+      "id": "a4-tyrael-service",
+      "difficulty": 4,
+      "prompt": "What mercenary service does Tyrael provide at Pandemonium Fortress?",
+      "choices": [
+        "Hires new mercenaries",
+        "Resurrects mercenaries but does not hire",
+        "Heals them for gold",
+        "Adds sockets to their weapons"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Tyrael",
+      "explanation": "Tyrael 'resurrects Mercenaries but not hire them.' Hires are done back in Acts I, II, III, V."
+    },
+    {
+      "id": "a4-izual-resistance",
+      "difficulty": 4,
+      "prompt": "Izual maintains notably high resistance to which element across all difficulties?",
+      "choices": ["Fire", "Cold", "Lightning", "Poison"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Izual has 75% cold resistance at every difficulty."
+    },
+    {
+      "id": "a4-izual-rune-normal",
+      "difficulty": 4,
+      "prompt": "What rune does Izual drop on Normal difficulty?",
+      "choices": ["El", "Sol", "Um", "Cham"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Izual",
+      "explanation": "Izual drops Sol on Normal, Um on Nightmare, and Cham on Hell."
+    },
+    {
+      "id": "a4-hellforge-drops",
+      "difficulty": 4,
+      "prompt": "On Normal difficulty, the Hellforge drops runes from which range?",
+      "choices": [
+        "El through Amn",
+        "Sol through Um",
+        "Hel through Gul",
+        "Pul through Zod"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+4+Quests",
+      "explanation": "Normal Hellforge drops El-Amn runes; Nightmare Sol-Um; Hell Hel-Gul. Plus four gems."
+    },
+    {
+      "id": "a4-hellforge-gems",
+      "difficulty": 5,
+      "prompt": "Besides a rune, how many gems does the Hellforge drop?",
+      "choices": ["One", "Two", "Four", "Seven"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Act+4+Quests",
+      "explanation": "Smashing the soulstone on the anvil drops 4 gems plus 1 rune at every difficulty."
+    },
+    {
+      "id": "a4-tyrael-end",
+      "difficulty": 5,
+      "prompt": "After Baal's defeat in Act V, what does Tyrael do for the hero?",
+      "choices": [
+        "Grants a final skill point",
+        "Opens a portal to exit the game world",
+        "Forges the Worldstone anew",
+        "Presents a unique item"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Tyrael",
+      "explanation": "After Baal falls, Tyrael opens a portal that allows the hero to leave the ruined Worldstone Keep."
+    },
+    {
+      "id": "a4-jamella-greeting",
+      "difficulty": 5,
+      "prompt": "Both Halbu and Jamella greet the player with the same phrase. Which is it?",
+      "choices": [
+        "'Stay awhile and listen.'",
+        "'Hail to you, champion.'",
+        "'What would you ask of me, stranger?'",
+        "'Welcome, outlander.'"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Halbu",
+      "explanation": "Both NPCs greet with 'Hail to you, champion.'"
     }
   ]
 }

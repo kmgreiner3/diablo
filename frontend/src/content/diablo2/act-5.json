@@ -4,148 +4,194 @@
   "subtitle": "Harrogath · Arreat Plateau · Worldstone Keep",
   "questions": [
     {
-      "id": "a5-harrogath",
+      "id": "a5-malah-role",
       "difficulty": 1,
-      "prompt": "What is the Act V town called?",
-      "choices": ["Pandemonium Fortress", "Harrogath", "Lut Gholein", "Sescheron"],
+      "prompt": "Who is the healer in Harrogath?",
+      "choices": ["Anya", "Malah", "Akara", "Fara"],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Act+5",
-      "explanation": "Harrogath is the last Barbarian stronghold, besieged at the foot of Mount Arreat."
+      "source": "https://diablo2.wiki.fextralife.com/Malah",
+      "explanation": "Malah welcomes travelers to 'the last stronghold of Order on Mount Arreat' and heals them there."
     },
     {
-      "id": "a5-baal-title",
-      "difficulty": 1,
-      "prompt": "Baal is the Lord of what?",
-      "choices": ["Pain", "Destruction", "Hatred", "Ruin"],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Baal",
-      "explanation": "Baal is the Lord of Destruction, the final Prime Evil and namesake of the expansion."
-    },
-    {
-      "id": "a5-baal-where",
+      "id": "a5-larzuk-reward",
       "difficulty": 2,
-      "prompt": "Baal is fought at the end of which area?",
+      "prompt": "What does Larzuk offer as the Siege on Harrogath reward?",
       "choices": [
+        "Adds sockets to an item",
+        "Imbues a rare item",
+        "Personalizes an item with your name",
+        "Grants +5 stat points"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Larzuk",
+      "explanation": "Larzuk adds sockets: up to 6 for white items based on ilvl, and 1 for rare/unique/set items."
+    },
+    {
+      "id": "a5-shenk-location",
+      "difficulty": 2,
+      "prompt": "Where is Shenk the Overseer fought?",
+      "choices": [
+        "Frigid Highlands",
+        "Bloody Foothills",
         "Arreat Plateau",
-        "Worldstone Keep",
-        "Halls of Anguish",
-        "Chaos Sanctuary"
+        "Crystalline Passage"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Baal",
-      "explanation": "Baal holds the Worldstone Keep atop Mount Arreat, in the Throne of Destruction chamber."
+      "source": "https://diablo2.wiki.fextralife.com/Shenk+The+Overseer",
+      "explanation": "Shenk the Overseer is slain in the Bloody Foothills to complete the Siege quest."
     },
     {
-      "id": "a5-defenders",
+      "id": "a5-malah-quest",
       "difficulty": 2,
-      "prompt": "Harrogath is held by defenders of which people?",
+      "prompt": "Malah gives which Act V quest?",
       "choices": [
-        "The Iron Wolves",
-        "The Barbarians",
-        "The Zakarum",
-        "The Horadrim"
+        "Siege on Harrogath",
+        "Prison of Ice",
+        "Rescue on Mount Arreat",
+        "Rite of Passage"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Act+5",
-      "explanation": "Harrogath is the last stronghold held by Barbarian defenders."
+      "source": "https://diablo2.wiki.fextralife.com/Malah",
+      "explanation": "Malah's Prison of Ice quest: she brews a potion to thaw Anya from the Frozen River."
     },
     {
-      "id": "a5-nihlathak-role",
+      "id": "a5-anya-frozen",
       "difficulty": 3,
-      "prompt": "What role does Nihlathak fill in Harrogath?",
+      "prompt": "Where is Anya imprisoned by Nihlathak?",
       "choices": [
-        "Blacksmith",
-        "Gambling merchant",
-        "Mercenary captain",
-        "Priestess of the flame"
+        "The Halls of Pain",
+        "The Frozen River",
+        "The Glacial Trail",
+        "Nihlathak's Temple"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Nihlathak",
-      "explanation": "Nihlathak serves as the gambling merchant in Harrogath: 'The siege has everything in short supply…except fools.'"
+      "source": "https://diablo2.wiki.fextralife.com/Anya",
+      "explanation": "Anya is frozen in the Frozen River; Malah's potion is needed to thaw her."
     },
     {
-      "id": "a5-barbarian-trees",
+      "id": "a5-qual-kehk-title",
       "difficulty": 3,
-      "prompt": "Which of these is one of the Barbarian's three skill trees?",
+      "prompt": "Qual-Kehk holds which title in Harrogath?",
       "choices": [
-        "Shape Shifting",
-        "Warcries",
-        "Curses",
-        "Traps"
+        "Senior Man-At-Arms",
+        "High Elder",
+        "Warchief",
+        "Master of the Hunt"
       ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Barbarian",
-      "explanation": "The Barbarian's trees are Combat Masteries, Combat Skills, and Warcries."
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Qual-Kehk",
+      "explanation": "Qual-Kehk is Senior Man-At-Arms of Harrogath; he hires Barbarian mercenaries."
     },
     {
-      "id": "a5-arreat",
+      "id": "a5-shenk-type",
       "difficulty": 3,
-      "prompt": "Mount Arreat protects what sacred object at its peak?",
-      "choices": [
-        "The Compelling Orb",
-        "The Worldstone",
-        "The Black Soulstone",
-        "The Eye of Anu"
-      ],
+      "prompt": "Shenk the Overseer carries which modifier?",
+      "choices": ["Extra Fast", "Extra Strong", "Cold Enchanted", "Magic Resistant"],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Baal",
-      "explanation": "Mount Arreat hides the Worldstone, a fragment of creation that the Barbarians have sworn for generations to guard."
+      "source": "https://diablo2.wiki.fextralife.com/Shenk+The+Overseer",
+      "explanation": "Shenk is classified as an Overseer with the Extra Strong modifier."
     },
     {
-      "id": "a5-druid-trees",
+      "id": "a5-prison-reward",
+      "difficulty": 3,
+      "prompt": "The Prison of Ice quest rewards you with a Scroll of Resistance that grants what?",
+      "choices": [
+        "+10 to all resistances",
+        "+1 to all skills",
+        "+20 maximum life",
+        "Fire Immunity"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+5+Quests",
+      "explanation": "The Scroll of Resistance grants +10 to all resistances, alongside a rare class-specific item."
+    },
+    {
+      "id": "a5-anya-reward",
       "difficulty": 4,
-      "prompt": "Which of these is NOT one of the Druid's three skill trees?",
+      "prompt": "What does Anya's Betrayal of Harrogath quest reward grant?",
       "choices": [
-        "Elemental",
-        "Shape Shifting",
-        "Summoning",
-        "Combat Masteries"
+        "+10 all resistances",
+        "Personalize an item with your name",
+        "Max sockets on a white item",
+        "+2 skill points"
       ],
-      "answerIndex": 3,
-      "source": "https://diablo2.wiki.fextralife.com/Druid",
-      "explanation": "Combat Masteries belongs to the Barbarian. The Druid's trees are Elemental, Shape Shifting, and Summoning."
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Anya",
+      "explanation": "Anya personalizes one item by inscribing your character's name onto it."
     },
     {
-      "id": "a5-baal-number",
+      "id": "a5-larzuk-innovations",
       "difficulty": 4,
-      "prompt": "Among the three Prime Evils, Baal is the…",
+      "prompt": "Larzuk is known for proposing wartime ideas centuries ahead of his time. Which are they?",
       "choices": [
-        "Eldest brother",
-        "Middle brother",
-        "Youngest brother",
-        "Only son"
-      ],
-      "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Mephisto",
-      "explanation": "Mephisto is eldest (Hatred), Diablo is middle (Terror), Baal is youngest (Destruction)."
-    },
-    {
-      "id": "a5-surface-act5",
-      "difficulty": 5,
-      "prompt": "Which of these is an Act V surface area?",
-      "choices": [
-        "Far Oasis",
-        "Frozen Tundra",
-        "Flayer Jungle",
-        "Spider Forest"
+        "Gunpowder and crossbows",
+        "Cannons and hot air balloons",
+        "Steam armor and war wagons",
+        "Poisoned arrows and siege towers"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Act+5",
-      "explanation": "The Frozen Tundra, Arreat Plateau, and Bloody Foothills all belong to Act V's mountain siege."
+      "source": "https://diablo2.wiki.fextralife.com/Larzuk",
+      "explanation": "Larzuk proposes cannons and hot air balloons for warfare, earning him the reputation of a madman."
     },
     {
-      "id": "a5-siege-quote",
-      "difficulty": 5,
-      "prompt": "Which quote belongs to Nihlathak?",
+      "id": "a5-larzuk-sockets-white",
+      "difficulty": 4,
+      "prompt": "Larzuk's socket service grants how many sockets to white (normal) items?",
       "choices": [
-        "'Stay a while, and listen.'",
-        "'The siege has everything in short supply…except fools.'",
-        "'Hello, my friend. Stay awhile and rest.'",
-        "'Not even death can save you from me.'"
+        "Exactly 1",
+        "1 to 6, based on item level",
+        "Always the maximum possible",
+        "2 to 4"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Nihlathak",
-      "explanation": "Nihlathak's bitter greeting as the gambler of Harrogath marks him as more cynical than the other elders."
+      "source": "https://diablo2.wiki.fextralife.com/Larzuk",
+      "explanation": "White items receive 1-6 sockets based on their item level."
+    },
+    {
+      "id": "a5-larzuk-sockets-rare",
+      "difficulty": 4,
+      "prompt": "How many sockets does Larzuk add to a rare, unique, or set item?",
+      "choices": ["Zero", "Exactly one", "Two", "The item's max"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Larzuk",
+      "explanation": "Rare, unique, and set items get exactly 1 socket; only white items get the variable 1-6 roll."
+    },
+    {
+      "id": "a5-qual-kehk-quests",
+      "difficulty": 5,
+      "prompt": "Qual-Kehk gives which two Act V quests?",
+      "choices": [
+        "Siege on Harrogath and Prison of Ice",
+        "Rescue on Mount Arreat and Rite of Passage",
+        "Betrayal of Harrogath and Eve of Destruction",
+        "Prison of Ice and Eve of Destruction"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Qual-Kehk",
+      "explanation": "Qual-Kehk assigns Rescue on Mount Arreat and Rite of Passage (the Ancients)."
+    },
+    {
+      "id": "a5-shenk-hell-rune",
+      "difficulty": 5,
+      "prompt": "On Hell difficulty, Shenk the Overseer can drop which rune?",
+      "choices": ["Zod", "Lo", "Cham", "Gul"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Shenk+The+Overseer",
+      "explanation": "Shenk's rune drops scale to Zod on Hell, making him a popular farm target."
+    },
+    {
+      "id": "a5-anya-waypoint",
+      "difficulty": 5,
+      "prompt": "Rescuing Anya also unlocks which waypoint?",
+      "choices": [
+        "Crystalline Passage",
+        "Halls of Pain",
+        "Glacial Trail",
+        "Ancients' Way"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Anya",
+      "explanation": "Anya's rescue unlocks the Halls of Pain waypoint, the first step toward Nihlathak's Temple."
     }
   ]
 }

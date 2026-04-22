@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useRun, baseScore, totalScore, QUESTIONS_PER_ACT, TOTAL_ACTS, allActsComplete } from "../engine/run";
 import { useUser } from "../engine/store";
@@ -9,6 +9,7 @@ export function Summary() {
   const nav = useNavigate();
   const username = useUser((s) => s.username);
   const { actProgress, bonus, dateKey, submitted, setSubmitted } = useRun();
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!allActsComplete(actProgress)) nav("/", { replace: true });
@@ -19,18 +20,30 @@ export function Summary() {
   const totalDuration = actProgress.reduce((s, a) => s + a.durationMs, 0) + (bonus?.durationMs ?? 0);
 
   const submittedRef = useRef(false);
+
+  async function doSubmit() {
+    setSubmitError(null);
+    try {
+      await submitScore({
+        username,
+        score: total,
+        quizId: `diablo2-${dateKey}`,
+        timestamp: Date.now(),
+        durationMs: totalDuration,
+      });
+      setSubmitted(true);
+    } catch (e) {
+      setSubmitError(e instanceof Error ? e.message : "unknown error");
+    }
+  }
+
   useEffect(() => {
     if (submittedRef.current || submitted) return;
     if (!allActsComplete(actProgress)) return;
     submittedRef.current = true;
-    void submitScore({
-      username,
-      score: total,
-      quizId: `diablo2-${dateKey}`,
-      timestamp: Date.now(),
-      durationMs: totalDuration,
-    }).then(() => setSubmitted(true));
-  }, [actProgress, bonus, dateKey, submitted, total, totalDuration, username, setSubmitted]);
+    void doSubmit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [actProgress, submitted]);
 
   const epithet =
     total >= 120 ? "Archon of the Horadrim" :
@@ -87,6 +100,21 @@ export function Summary() {
           {bonus.correct && (
             <span className="text-ink/50">({Math.round(bonus.durationMs / 10) / 100}s)</span>
           )}
+        </div>
+      )}
+
+      {submitError && (
+        <div className="mt-6 inline-flex flex-col items-center gap-2 px-4 py-3 border border-oxblood bg-oxblood/5 text-oxblood-deep max-w-md mx-auto">
+          <div className="font-mono uppercase tracking-widest text-[10px]">
+            Score did not save
+          </div>
+          <div className="font-body italic text-sm">{submitError}</div>
+          <button
+            onClick={() => { submittedRef.current = true; void doSubmit(); }}
+            className="mt-1 bg-oxblood text-vellum-light hover:bg-oxblood-deep px-4 py-2 font-mono uppercase tracking-widest text-[10px]"
+          >
+            Retry
+          </button>
         </div>
       )}
 

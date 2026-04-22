@@ -4,147 +4,164 @@
   "subtitle": "Rogue Encampment · Monastery · Blood Moor",
   "questions": [
     {
-      "id": "a1-rogue-encampment",
+      "id": "a1-warriv",
       "difficulty": 1,
-      "prompt": "What is the Act I town called?",
-      "choices": ["Lut Gholein", "Rogue Encampment", "Harrogath", "Kurast Docks"],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Act+1",
-      "explanation": "Act I opens at the Rogue Encampment, a town within a fortress held by the Sisterhood of the Sightless Eye."
-    },
-    {
-      "id": "a1-charsi",
-      "difficulty": 1,
-      "prompt": "Charsi, who repairs your gear in the Rogue Encampment, serves which trade?",
-      "choices": ["Scribe", "Blacksmith", "Alchemist", "Mercenary captain"],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Charsi",
-      "explanation": "Charsi is the blacksmith of the Rogue Encampment and a member of the Sisterhood of the Sightless Eye."
-    },
-    {
-      "id": "a1-den-akara",
-      "difficulty": 1,
-      "prompt": "Who gives the Den of Evil quest?",
-      "choices": ["Kashya", "Warriv", "Akara", "Gheed"],
+      "prompt": "Which NPC runs the caravan that carries you from the Rogue Encampment to Lut Gholein?",
+      "choices": ["Gheed", "Kashya", "Warriv", "Akara"],
       "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Den+of+Evil",
-      "explanation": "Akara, the Priestess of the Sightless Eye, tasks you with clearing the Den of Evil."
+      "source": "https://diablo2.wiki.fextralife.com/Warriv",
+      "explanation": "Warriv, the caravan master, opens passage to Act II once Andariel falls."
     },
     {
-      "id": "a1-andariel-act",
+      "id": "a1-tristram-access",
       "difficulty": 2,
-      "prompt": "Andariel, the Maiden of Anguish, is the end boss of which act?",
-      "choices": ["Act I", "Act II", "Act III", "Act V"],
-      "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Andariel",
-      "explanation": "Andariel is the final boss of Act I and one of the Lesser Evils."
+      "prompt": "Tristram is reached via a portal that appears in which Act I area?",
+      "choices": ["Cold Plains", "Stony Field", "Dark Wood", "Black Marsh"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Tristram",
+      "explanation": "The portal opens in Stony Field once you strike the Cairn Stones in the correct order."
     },
     {
-      "id": "a1-den-reward",
+      "id": "a1-tree-of-inifuss",
       "difficulty": 2,
-      "prompt": "The Den of Evil reward includes a skill point and what else?",
-      "choices": [
-        "A free respecialization",
-        "A free Tome of Town Portal",
-        "A Horadric Cube",
-        "A mercenary"
-      ],
-      "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Den+of+Evil",
-      "explanation": "Den of Evil grants +1 skill point and one free respec of your stats and skills."
-    },
-    {
-      "id": "a1-blood-raven-type",
-      "difficulty": 2,
-      "prompt": "Blood Raven, fought in the Burial Grounds, is what kind of enemy?",
-      "choices": [
-        "A Greater Mummy",
-        "A Fallen Shaman",
-        "A Corrupt Rogue Archer",
-        "A Succubus"
-      ],
+      "prompt": "The Tree of Inifuss stands in which Act I zone?",
+      "choices": ["Blood Moor", "Stony Field", "Dark Wood", "Black Marsh"],
       "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Blood+Raven",
-      "explanation": "Blood Raven was a Rogue of the Sightless Eye, corrupted by Andariel into a Corrupt Rogue Archer who can summon zombies."
+      "source": "https://diablo2.wiki.fextralife.com/Scroll+of+Inifuss",
+      "explanation": "The Tree of Inifuss is in the Dark Wood; slaying it yields the scroll Akara then translates."
     },
     {
-      "id": "a1-countess-tower",
+      "id": "a1-cairn-stones",
       "difficulty": 3,
-      "prompt": "Where is The Countess found?",
+      "prompt": "The Scroll of Inifuss, once translated by Akara, reveals the activation order for what?",
       "choices": [
+        "The Cairn Stones",
+        "The Horadric Cube",
         "The Forgotten Tower",
-        "The Halls of the Dead",
-        "The Arcane Sanctuary",
-        "The Pit"
+        "The Monastery Gate"
       ],
       "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/The+Countess",
-      "explanation": "The Countess waits at the bottom of the Forgotten Tower in the Black Marsh."
+      "source": "https://diablo2.wiki.fextralife.com/Scroll+of+Inifuss",
+      "explanation": "Akara translates the scroll, revealing the sequence to strike the Cairn Stones in Stony Field and open the portal to Tristram."
     },
     {
-      "id": "a1-countess-drop",
+      "id": "a1-cain-prison",
       "difficulty": 3,
-      "prompt": "The Countess is most famous among farmers for guaranteeing a drop of what?",
+      "prompt": "Where is Deckard Cain found, caged and guarded by skeletons, during Act I?",
+      "choices": ["Cold Plains", "Tristram", "The Catacombs", "The Cathedral"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Tristram",
+      "explanation": "Cain is imprisoned in the ruins of Tristram; the Search for Cain quest is how you rescue him."
+    },
+    {
+      "id": "a1-rakanishu-where",
+      "difficulty": 3,
+      "prompt": "Where is the Super Unique Rakanishu found?",
+      "choices": ["Blood Moor", "Stony Field", "Cold Plains", "Dark Wood"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Rakanishu",
+      "explanation": "Rakanishu haunts the Stony Field, often right near the Cairn Stones."
+    },
+    {
+      "id": "a1-rakanishu-type",
+      "difficulty": 3,
+      "prompt": "Rakanishu is what kind of creature?",
       "choices": [
-        "Set items",
-        "Runes",
-        "Gems",
-        "Unique jewels"
+        "A Corrupt Rogue",
+        "A Fallen Shaman",
+        "A Brute",
+        "A Greater Mummy"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/The+Countess",
-      "explanation": "She has a 100% chance to drop 1–3 runes per kill, scaling up to Lo runes on Hell difficulty."
+      "source": "https://diablo2.wiki.fextralife.com/Rakanishu",
+      "explanation": "Rakanishu is a Fallen Shaman with the Lightning Enchanted and Extra Fast modifiers."
     },
     {
-      "id": "a1-amazon-trees",
+      "id": "a1-sisters-reward",
       "difficulty": 3,
-      "prompt": "Which of these is NOT one of the Amazon's three skill trees?",
+      "prompt": "What does Kashya reward for the Sisters' Burial Grounds quest?",
       "choices": [
-        "Bow and Crossbow",
-        "Javelin and Spear",
-        "Passive and Magic",
-        "Shadow Disciplines"
+        "A free Rogue mercenary",
+        "A skill point",
+        "A Horadric Cube",
+        "A rare bow"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Kashya",
+      "explanation": "Kashya, captain of the Rogues, grants a free Rogue mercenary for clearing the Burial Grounds."
+    },
+    {
+      "id": "a1-imbue",
+      "difficulty": 4,
+      "prompt": "The Tools of the Trade quest reward grants a one-time service called what?",
+      "choices": ["Imbue", "Personalize", "Socket", "Re-roll"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+1+Quests",
+      "explanation": "Charsi's reward is Imbue: she transforms a normal base item into a new rare item."
+    },
+    {
+      "id": "a1-bishibosh",
+      "difficulty": 4,
+      "prompt": "Bishibosh, a Super Unique Fallen Shaman in the Cold Plains, is immune to which element?",
+      "choices": ["Cold", "Fire", "Lightning", "Poison"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Bishibosh",
+      "explanation": "Bishibosh is Fire Enchanted with Magic Resistance and is mainly immune to fire."
+    },
+    {
+      "id": "a1-coldcrow",
+      "difficulty": 4,
+      "prompt": "Coldcrow, a Super Unique Corrupt Rogue, lurks in which Act I area?",
+      "choices": ["The Den of Evil", "The Cave", "The Burial Grounds", "The Pit"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Coldcrow",
+      "explanation": "Coldcrow waits inside The Cave, the optional dungeon off the Cold Plains."
+    },
+    {
+      "id": "a1-treehead",
+      "difficulty": 4,
+      "prompt": "Treehead Woodfist, encountered in the Dark Wood, is which type of creature?",
+      "choices": [
+        "A Brute / Wendigo",
+        "A Fallen Shaman",
+        "A Corrupt Rogue",
+        "A Skeleton Archer"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Treehead+WoodFist",
+      "explanation": "Treehead Woodfist is a Wendigo-type (Brute) Super Unique with Extra Strong and Extra Fast modifiers."
+    },
+    {
+      "id": "a1-griswold-former",
+      "difficulty": 5,
+      "prompt": "Before his fall, Griswold was the blacksmith of which town?",
+      "choices": ["Tristram", "Harrogath", "Lut Gholein", "Kurast"],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Griswold",
+      "explanation": "Griswold was the blacksmith of Tristram in Diablo I, now cursed and risen among the ruins."
+    },
+    {
+      "id": "a1-griswold-modifier",
+      "difficulty": 5,
+      "prompt": "Griswold carries which monster modifier?",
+      "choices": ["Fire Enchanted", "Cursed", "Cold Enchanted", "Extra Fast"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Griswold",
+      "explanation": "Griswold's modifier is Cursed; he curses you on hit, lowering your defense."
+    },
+    {
+      "id": "a1-warriv-unlock",
+      "difficulty": 5,
+      "prompt": "Warriv's caravan only departs for Act II after which quest is completed?",
+      "choices": [
+        "Den of Evil",
+        "The Search for Cain",
+        "Tools of the Trade",
+        "Sisters to the Slaughter"
       ],
       "answerIndex": 3,
-      "source": "https://diablo2.wiki.fextralife.com/Amazon",
-      "explanation": "Shadow Disciplines belongs to the Assassin. The Amazon's trees are Bow and Crossbow, Javelin and Spear, and Passive and Magic."
-    },
-    {
-      "id": "a1-andariel-weakness",
-      "difficulty": 4,
-      "prompt": "Andariel has a gaping -50 resistance to which element across all difficulties?",
-      "choices": ["Cold", "Lightning", "Fire", "Poison"],
-      "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Andariel",
-      "explanation": "Andariel's Maiden of Anguish frame burns fast in fire; she carries -50 fire resistance at every difficulty."
-    },
-    {
-      "id": "a1-sisterhood",
-      "difficulty": 4,
-      "prompt": "Blood Raven was once a member of which order before Andariel's corruption?",
-      "choices": [
-        "The Sisterhood of the Sightless Eye",
-        "The Vizjerei",
-        "The Zakarum",
-        "The Horadrim"
-      ],
-      "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Blood+Raven",
-      "explanation": "Blood Raven served in the Sisterhood of the Sightless Eye (the same order Akara, Kashya, and Charsi belong to) before her fall."
-    },
-    {
-      "id": "a1-blood-raven-modifier",
-      "difficulty": 5,
-      "prompt": "Which modifier does Blood Raven carry that lights up her arrows?",
-      "choices": [
-        "Cold Enchanted",
-        "Fire Arrow",
-        "Extra Fast",
-        "Lightning Enchanted"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Blood+Raven",
-      "explanation": "Blood Raven carries the Fire Arrow modifier; hence the streaks of flame she draws across the Burial Grounds."
+      "source": "https://diablo2.wiki.fextralife.com/Warriv",
+      "explanation": "Warriv becomes available to travel once Sisters to the Slaughter (the Andariel kill) is done."
     }
   ]
 }

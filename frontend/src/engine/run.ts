@@ -4,7 +4,7 @@ import { todayKey, pickDaily, pickDailyBonus } from "./daily";
 import { actBanks, cowBonusBank } from "../content/diablo2";
 import type { Question } from "./types";
 
-export const QUESTIONS_PER_ACT = 10;
+export const QUESTIONS_PER_ACT = 5;
 export const TOTAL_ACTS = 5;
 
 export interface ActProgress {
@@ -95,19 +95,16 @@ export function allActsComplete(p: ActProgress[]): boolean {
   return p.every((a) => a.completed);
 }
 
-/** Speed multiplier curve for the Cow bonus.
+/** Speed multiplier curve for the Cow bonus (5s answer window).
  * Correct @ 0s  -> 3.0x
- * Correct @ 5s  -> 3.0x
- * Correct @ 20s -> 1.0x (linear between)
- * Correct > 20s -> 1.0x
- * Wrong         -> 1.0x (no bonus)
+ * Correct @ 5s  -> 1.5x (linear decay)
+ * Wrong / timeout -> 1.0x (no bonus)
  */
 export function computeBonusMultiplier(correct: boolean, durationMs: number): number {
   if (!correct) return 1;
-  const sec = durationMs / 1000;
-  if (sec <= 5) return 3;
-  if (sec >= 20) return 1;
-  return +(3 - ((sec - 5) / 15) * 2).toFixed(2);
+  const sec = Math.min(BONUS_TIME_LIMIT_MS, durationMs) / 1000;
+  const frac = sec / (BONUS_TIME_LIMIT_MS / 1000);
+  return +(3 - frac * 1.5).toFixed(2);
 }
 
-export const BONUS_TIME_LIMIT_MS = 20_000;
+export const BONUS_TIME_LIMIT_MS = 5_000;

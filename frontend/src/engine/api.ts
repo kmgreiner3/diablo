@@ -25,11 +25,15 @@ export async function submitScore(entry: ScoreEntry): Promise<void> {
     mockWrite(all);
     return;
   }
-  await fetch(SCORE_API, {
+  const res = await fetch(SCORE_API, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(entry),
   });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`submit failed (${res.status}): ${body}`);
+  }
 }
 
 export async function fetchLeaderboard(quizId: string): Promise<ScoreEntry[]> {

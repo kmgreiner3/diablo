@@ -9,6 +9,8 @@ import {
 } from "../engine/run";
 import { DecorativeDivider } from "../components/Ornaments";
 
+type Stage = "portal" | "reading" | "answering" | "resolved";
+
 export function Bonus() {
   const nav = useNavigate();
   const dateKey = useRun((s) => s.dateKey);
@@ -23,19 +25,19 @@ export function Bonus() {
 
   const q = useMemo(() => getBonusQuestion(dateKey), [dateKey]);
 
-  const [stage, setStage] = useState<"portal" | "asking">("portal");
+  const [stage, setStage] = useState<Stage>("portal");
   const [picked, setPicked] = useState<number | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const startRef = useRef<number>(0);
 
-  // timer while asking
+  // Ticking timer while answering
   useEffect(() => {
-    if (stage !== "asking") return;
+    if (stage !== "answering") return;
     const iv = setInterval(() => {
       const e = Date.now() - startRef.current;
       setElapsed(e);
       if (e >= BONUS_TIME_LIMIT_MS && picked === null) {
-        handlePick(-1);
+        handlePick(-1); // timeout
       }
     }, 50);
     return () => clearInterval(iv);
@@ -43,8 +45,12 @@ export function Bonus() {
   }, [stage, picked]);
 
   function openPortal() {
+    setStage("reading");
+  }
+
+  function startTimer() {
     startRef.current = Date.now();
-    setStage("asking");
+    setStage("answering");
   }
 
   function handlePick(i: number) {
@@ -54,29 +60,30 @@ export function Bonus() {
     const mult = computeBonusMultiplier(correct, dur);
     setPicked(i);
     setElapsed(dur);
+    setStage("resolved");
     completeBonus(correct, dur, mult);
   }
 
   if (stage === "portal") {
     return (
-      <div className="relative paper-grain bg-vellum text-ink rounded-sm p-12 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] text-center ink-bleed">
+      <div className="relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-12 border border-gold/40 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] text-center ink-bleed">
         <div className="font-mono uppercase tracking-[0.4em] text-oxblood/70 text-xs">
           A red portal has opened
         </div>
         <DecorativeDivider />
-        <div className="mx-auto my-2 w-40 h-40 relative">
+        <div className="mx-auto my-2 w-32 h-32 md:w-40 md:h-40 relative">
           <div className="absolute inset-0 rounded-full bg-oxblood/50 blur-2xl animate-pulse" />
           <div className="absolute inset-2 rounded-full border-4 border-oxblood bg-oxblood/20" />
           <div className="absolute inset-0 flex items-center justify-center font-display italic text-4xl text-oxblood-deep">
             ✦
           </div>
         </div>
-        <h1 className="font-display italic text-5xl text-ink">The Secret Cow Level</h1>
+        <h1 className="font-display italic text-4xl md:text-5xl text-ink">The Secret Cow Level</h1>
         <p className="font-body italic text-ink-faded mt-3 max-w-lg mx-auto">
-          A single question awaits. Answer swiftly and the Cow King's hoard multiplies thy score;
-          tarry, and the reward dwindles. At <span className="font-mono text-oxblood">≤5s</span> the
-          bonus is <span className="font-mono text-oxblood">×3</span>. It fades to <span className="font-mono">×1</span> by
-          <span className="font-mono"> 20s</span>. A wrong answer grants nothing.
+          One riddle awaits. Thou shalt read the question first at thy leisure.
+          When ready, strike <span className="font-mono text-oxblood">Ready</span> and the Cow King
+          grants thee <span className="font-mono text-oxblood">5 seconds</span> to answer.
+          Faster answers earn a higher multiplier; a wrong answer or timeout grants no bonus.
         </p>
         <button
           onClick={openPortal}
@@ -88,6 +95,38 @@ export function Bonus() {
     );
   }
 
+  if (stage === "reading") {
+    return (
+      <div className="relative">
+        <div className="flex items-center justify-between mb-3 font-mono uppercase tracking-widest text-xs">
+          <span className="text-oxblood/80">Cow Bonus · Study Phase</span>
+          <span className="text-vellum/60">timer paused</span>
+        </div>
+
+        <div className="relative paper-grain bg-vellum text-ink rounded-sm p-6 md:p-10 border-2 border-oxblood shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] ink-bleed">
+          <div className="font-display text-2xl md:text-3xl italic text-ink">{q.prompt}</div>
+          <p className="font-body italic text-ink-faded mt-4">
+            Read carefully. When thou strike Ready, the answers reveal and the Cow King's
+            5-second hourglass begins to drain.
+          </p>
+          <DecorativeDivider />
+          <div className="text-center">
+            <button
+              onClick={startTimer}
+              className="bg-oxblood text-vellum-light hover:bg-oxblood-deep px-10 py-4 font-mono uppercase tracking-[0.3em] text-sm border border-gold/60"
+            >
+              Ready · Start 5s →
+            </button>
+            <div className="mt-3 font-mono text-[10px] uppercase tracking-widest text-ink/40">
+              multiplier: ×3 @ 0s, decays to ×1.5 @ 5s
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // stage === "answering" | "resolved"
   const timeLeft = Math.max(0, BONUS_TIME_LIMIT_MS - elapsed);
   const pct = (timeLeft / BONUS_TIME_LIMIT_MS) * 100;
   const liveMult = computeBonusMultiplier(true, elapsed);
@@ -97,9 +136,12 @@ export function Bonus() {
   return (
     <div className="relative">
       <div className="flex items-center justify-between mb-3 font-mono uppercase tracking-widest text-xs">
-        <span className="text-oxblood/80">Cow Bonus · Sudden Death</span>
+        <span className="text-oxblood/80">Cow Bonus · {(timeLeft / 1000).toFixed(1)}s</span>
         <span className="text-gold-bright">
-          live multiplier: <span className="font-display italic text-xl not-italic">×{liveMult.toFixed(2)}</span>
+          live multiplier:{" "}
+          <span className="font-display italic text-xl not-italic">
+            ×{liveMult.toFixed(2)}
+          </span>
         </span>
       </div>
       <div className="h-1.5 bg-ink/40 rounded-sm overflow-hidden mb-4">
@@ -148,7 +190,9 @@ export function Bonus() {
               className={`seal-stamp shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center font-display italic border-2 ${isCorrect ? "border-gold text-gold bg-gold/5" : "border-oxblood text-oxblood bg-oxblood/5"}`}
             >
               <div className="text-center leading-none">
-                <div className="text-xl">{isCorrect ? "Veritas" : "Errare"}</div>
+                <div className="text-xl">
+                  {picked === -1 ? "Tardus" : isCorrect ? "Veritas" : "Errare"}
+                </div>
                 <div className="text-sm font-mono mt-1">
                   ×{(bonus?.multiplier ?? 1).toFixed(2)}
                 </div>
@@ -156,7 +200,8 @@ export function Bonus() {
             </div>
             <div className="flex-1">
               <div className="font-mono uppercase tracking-widest text-[10px] text-ink/50 mb-1">
-                From the Fextralife Codex · answered in {Math.round(elapsed / 100) / 10}s
+                From the Fextralife Codex ·{" "}
+                {picked === -1 ? "timed out" : `answered in ${Math.round(elapsed / 100) / 10}s`}
               </div>
               <p className="font-body text-ink-faded italic">{q.explanation}</p>
               <a

@@ -49,17 +49,23 @@ export const handler = async (event) => {
     const { username, score, quizId, durationMs } = body;
 
     if (!USERNAME_RE.test(String(username || ""))) {
+      console.warn("reject: invalid username", { username });
       return { statusCode: 400, headers, body: JSON.stringify({ error: "invalid username" }) };
     }
     if (!QUIZID_RE.test(String(quizId || ""))) {
+      console.warn("reject: invalid quizId", { quizId });
       return { statusCode: 400, headers, body: JSON.stringify({ error: "invalid quizId" }) };
     }
     const n = Number(score);
     const d = Number(durationMs);
-    if (!Number.isInteger(n) || n < 0 || n > 100) {
+    // Cap is intentionally loose: 25 base questions × up to ×3 cow bonus = 75 max today.
+    // 500 leaves headroom for future packs with more acts/harder bonuses.
+    if (!Number.isInteger(n) || n < 0 || n > 500) {
+      console.warn("reject: invalid score", { score });
       return { statusCode: 400, headers, body: JSON.stringify({ error: "invalid score" }) };
     }
     if (!Number.isFinite(d) || d < 1000 || d > 3_600_000) {
+      console.warn("reject: invalid durationMs", { durationMs });
       return { statusCode: 400, headers, body: JSON.stringify({ error: "invalid durationMs" }) };
     }
 

@@ -4,143 +4,174 @@
   "subtitle": "Lut Gholein · Tombs of Tal Rasha · Arcane Sanctuary",
   "questions": [
     {
-      "id": "a2-lut-gholein",
+      "id": "a2-atma",
       "difficulty": 1,
-      "prompt": "What is the Act II town called?",
-      "choices": ["Kurast Docks", "Lut Gholein", "Harrogath", "Caldeum"],
+      "prompt": "Who gives the Radament's Lair quest in Lut Gholein?",
+      "choices": ["Drognan", "Atma", "Jerhyn", "Fara"],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Act+2",
-      "explanation": "Lut Gholein, the largest city in the game, is a sunbaked trading port on the edge of the Twin Seas."
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Atma, the tavern keeper, sends you to destroy Radament after he took her family."
     },
     {
-      "id": "a2-duriel-title",
-      "difficulty": 1,
-      "prompt": "Duriel, slain in the tomb beneath the desert, bears which title?",
-      "choices": ["Lord of Terror", "Lord of Pain", "Lord of Hatred", "Lord of Destruction"],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Duriel",
-      "explanation": "Duriel, Act II's end boss, is known as the Lord of Pain."
-    },
-    {
-      "id": "a2-radament-where",
+      "id": "a2-horadric-staff-quest",
       "difficulty": 2,
-      "prompt": "Where is Radament fought?",
+      "prompt": "Who tasks you with assembling the Horadric Staff?",
+      "choices": ["Atma", "Drognan", "Deckard Cain", "Jerhyn"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Deckard Cain, last of the Horadrim, instructs you to recover the components and transmute them in the Cube."
+    },
+    {
+      "id": "a2-drognan-former",
+      "difficulty": 2,
+      "prompt": "Drognan of Lut Gholein is what kind of retired spellcaster?",
+      "choices": ["Necromancer", "Sorcerer", "Paladin", "Druid"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Drognan",
+      "explanation": "Drognan is described as 'a retired Sorcerer that offers Potions, Staves, Scepters, Wands, Tombs, and Scrolls.'"
+    },
+    {
+      "id": "a2-fara-former",
+      "difficulty": 3,
+      "prompt": "Fara was trained as a Paladin of which order?",
       "choices": [
+        "The Horadrim",
+        "The Zakarum",
+        "The Vizjerei",
+        "The Sightless Eye"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Fara",
+      "explanation": "Fara was trained as a Paladin of Zakarum in the Eastern Kurast temple before settling in Lut Gholein as a smith and healer."
+    },
+    {
+      "id": "a2-fara-service",
+      "difficulty": 3,
+      "prompt": "Beyond repair and heal, what unique service does Fara provide?",
+      "choices": [
+        "Removes curse and poison effects",
+        "Adds sockets to items",
+        "Gambles unique items",
+        "Imbues rare items"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Fara",
+      "explanation": "Fara removes curse and poison effects from your character, a service no other NPC offers."
+    },
+    {
+      "id": "a2-greiz",
+      "difficulty": 3,
+      "prompt": "Who recruits Desert Mercenaries in Lut Gholein?",
+      "choices": ["Jerhyn", "Greiz", "Meshif", "Elzix"],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Greiz",
+      "explanation": "Greiz, Act II's mercenary captain, hires and resurrects Desert Warriors."
+    },
+    {
+      "id": "a2-tainted-sun",
+      "difficulty": 3,
+      "prompt": "The Tainted Sun quest is triggered upon entering which area?",
+      "choices": [
+        "The Rocky Waste",
         "The Lost City",
-        "The Sewers beneath Lut Gholein",
-        "The Halls of the Dead",
-        "The Palace Cellar"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Radament",
-      "explanation": "Radament lurks on the third level of the Sewers beneath Lut Gholein."
-    },
-    {
-      "id": "a2-radament-type",
-      "difficulty": 2,
-      "prompt": "Radament is which type of monster?",
-      "choices": [
-        "A Greater Mummy",
-        "A Lesser Evil",
-        "A Scarab Demon",
-        "A Sand Raider"
-      ],
-      "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Radament",
-      "explanation": "Radament is a Super Unique Greater Mummy who heals and resurrects the undead around him."
-    },
-    {
-      "id": "a2-horadric-cube-where",
-      "difficulty": 2,
-      "prompt": "The Horadric Cube is recovered from a chest in which dungeon?",
-      "choices": [
-        "Sewers Level 3",
-        "Halls of the Dead Level 3",
-        "Maggot Lair Level 3",
-        "Ancient Tunnels"
-      ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Horadric+Cube",
-      "explanation": "The Cube sits in a chest on the third level of the Halls of the Dead."
-    },
-    {
-      "id": "a2-cube-slots",
-      "difficulty": 3,
-      "prompt": "How many inventory spaces does the Horadric Cube occupy?",
-      "choices": ["6", "8", "12", "16"],
-      "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Horadric+Cube",
-      "explanation": "The Cube occupies 12 spaces (4 wide by 3 tall)."
-    },
-    {
-      "id": "a2-summoner-where",
-      "difficulty": 3,
-      "prompt": "The Summoner is confronted in which area?",
-      "choices": [
         "The Arcane Sanctuary",
-        "The Valley of Snakes",
-        "The Canyon of the Magi",
-        "The Claw Viper Temple"
+        "The Halls of the Dead"
       ],
-      "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Summoner",
-      "explanation": "The Summoner must be slain in the Arcane Sanctuary to unlock the Canyon of the Magi."
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "The Tainted Sun auto-triggers when you step into the Lost City; the Claw Viper Temple holds the answer."
     },
     {
-      "id": "a2-sorceress-trees",
+      "id": "a2-seven-tombs",
       "difficulty": 3,
-      "prompt": "Which trio names the Sorceress's three skill trees?",
+      "prompt": "How many tombs surround Tal Rasha's in the Canyon of the Magi (including his)?",
+      "choices": ["Three", "Five", "Six", "Seven"],
+      "answerIndex": 3,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Seven tombs total; six are false, and the true tomb of Tal Rasha is identified by the Horadric symbol."
+    },
+    {
+      "id": "a2-radament-drop",
+      "difficulty": 4,
+      "prompt": "Defeating Radament grants the player what?",
       "choices": [
-        "Fire, Cold, Lightning",
-        "Fire, Cold, Poison",
-        "Fire, Lightning, Arcane",
-        "Ice, Flame, Storm"
+        "A skill point",
+        "A free respec",
+        "Two skill points",
+        "An Imbue"
       ],
       "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Sorceress",
-      "explanation": "The Sorceress masters Fire, Cold, and Lightning spells."
+      "source": "https://diablo2.wiki.fextralife.com/Radament",
+      "explanation": "Radament drops a skill point. Atma herself adds a 10% merchant discount."
     },
     {
-      "id": "a2-summoner-unlocks",
+      "id": "a2-seven-tombs-marker",
       "difficulty": 4,
-      "prompt": "Defeating The Summoner grants access to what?",
+      "prompt": "Tal Rasha's true tomb is identified by what?",
       "choices": [
-        "The Durance of Hate",
-        "The Canyon of the Magi",
-        "The Worldstone Chamber",
-        "The Chaos Sanctuary"
+        "The Horadric symbol",
+        "The Zakarum sigil",
+        "The Mark of Baal",
+        "An unbroken seal"
       ],
-      "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Summoner",
-      "explanation": "Killing the Summoner opens the way to the Canyon of the Magi, where the true tomb of Tal Rasha awaits."
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Among the seven tombs in the Canyon of the Magi, only Tal Rasha's bears the Horadric symbol."
     },
     {
-      "id": "a2-surface-areas",
+      "id": "a2-jerhyn-quest",
       "difficulty": 4,
-      "prompt": "Which of these is NOT an Act II surface area?",
-      "choices": [
-        "Rocky Waste",
-        "Far Oasis",
-        "Frozen Tundra",
-        "Valley of Snakes"
-      ],
+      "prompt": "Who gives the Seven Tombs quest to send you after Duriel?",
+      "choices": ["Cain", "Drognan", "Jerhyn", "Atma"],
       "answerIndex": 2,
-      "source": "https://diablo2.wiki.fextralife.com/Act+2",
-      "explanation": "Frozen Tundra belongs to Act V. Act II's sand-blown sweep runs Rocky Waste, Dry Hills, Far Oasis, Lost City, Valley of Snakes."
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Lord Jerhyn, the young ruler of Lut Gholein, charges you with finding Tal Rasha's true tomb."
     },
     {
-      "id": "a2-summoner-mods",
-      "difficulty": 5,
-      "prompt": "Which set of modifiers describes The Summoner?",
+      "id": "a2-arcane-givers",
+      "difficulty": 4,
+      "prompt": "Who gives the Arcane Sanctuary quest?",
       "choices": [
-        "Extra Fast, Cold Enchanted",
-        "Extra Strong, Extra Fast, resistant to Fire/Cold/Lightning",
-        "Magic Resistant, Lightning Enchanted",
-        "Cursed, Teleportation"
+        "Drognan and Lord Jerhyn",
+        "Atma and Fara",
+        "Cain and Greiz",
+        "Meshif alone"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/Act+2+Quests",
+      "explanation": "Drognan and Lord Jerhyn together send you to find Horazon's Sanctuary in search of Tal Rasha's tomb."
+    },
+    {
+      "id": "a2-tal-rasha-baal",
+      "difficulty": 5,
+      "prompt": "Tal Rasha, last of the Horadrim, sealed himself in his tomb with which demon?",
+      "choices": ["Andariel", "Duriel", "Baal", "Mephisto"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Tal+Rasha",
+      "explanation": "Tal Rasha bound himself with Baal, the Lord of Destruction, to contain him."
+    },
+    {
+      "id": "a2-drognan-andariel",
+      "difficulty": 5,
+      "prompt": "When Drognan first greets you, he congratulates you on what?",
+      "choices": [
+        "Clearing the Den of Evil",
+        "Banishing Andariel",
+        "Slaying Radament",
+        "Recovering the Horadric Cube"
       ],
       "answerIndex": 1,
-      "source": "https://diablo2.wiki.fextralife.com/Summoner",
-      "explanation": "The Summoner is Extra Strong, Extra Fast, and resistant to all three elements: Fire, Cold, and Lightning."
+      "source": "https://diablo2.wiki.fextralife.com/Drognan",
+      "explanation": "Drognan says: 'I've heard that you are responsible for banishing Andariel back to the Burning Hells.'"
+    },
+    {
+      "id": "a2-fara-location",
+      "difficulty": 5,
+      "prompt": "At what level does Fara begin selling magical and socketed items?",
+      "choices": ["Level 5", "Level 10", "Level 15", "Level 20"],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Fara",
+      "explanation": "Fara begins offering magical and socketed items once your character reaches level 15."
     }
   ]
 }

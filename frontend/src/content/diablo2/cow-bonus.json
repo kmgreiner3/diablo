@@ -3,46 +3,88 @@
   "subtitle": "Moo · Moo · Moo",
   "questions": [
     {
-      "id": "cow-portal-items",
+      "id": "cow-king-modifiers",
       "difficulty": 5,
-      "prompt": "To open the portal to the Secret Cow Level, what two items are transmuted in the Horadric Cube?",
+      "prompt": "The Cow King carries which pair of modifiers?",
       "choices": [
-        "Wirt's Leg + Tome of Town Portal",
-        "Wirt's Leg + Tome of Identify",
-        "Horadric Staff + Tome of Town Portal",
-        "Khalim's Will + Tome of Town Portal"
+        "Extra Strong, Extra Fast",
+        "Magic Resistant, Lightning Enchanted",
+        "Fire Enchanted, Cursed",
+        "Cold Enchanted, Spectral Hit"
       ],
-      "answerIndex": 0,
-      "source": "https://diablo2.wiki.fextralife.com/Secret+Cow+Level",
-      "explanation": "In the Rogue Encampment after finishing that difficulty, cube Wirt's Leg plus a Tome of Town Portal to tear open the red portal."
-    },
-    {
-      "id": "cow-king-type",
-      "difficulty": 5,
-      "prompt": "The Cow King is a Super Unique of which monster type?",
-      "choices": [
-        "Greater Mummy",
-        "Corrupt Rogue",
-        "Hell Bovine",
-        "Fallen Shaman"
-      ],
-      "answerIndex": 2,
+      "answerIndex": 1,
       "source": "https://diablo2.wiki.fextralife.com/The+Cow+King",
-      "explanation": "The Cow King is a Hell Bovine carrying Magic Resistant and Lightning Enchanted modifiers."
+      "explanation": "The Cow King is a Hell Bovine with Magic Resistant and Lightning Enchanted modifiers."
     },
     {
-      "id": "cow-one-shot",
+      "id": "cow-portal-town",
       "difficulty": 5,
-      "prompt": "What happens once a character slays The Cow King on a difficulty?",
+      "prompt": "In which town must the Cow Level portal be opened?",
       "choices": [
-        "The portal spawns a harder cow king",
-        "The character can never reopen the Cow Level portal on that difficulty",
-        "All cows drop a rune on the next kill",
-        "Wirt's Leg is consumed permanently"
+        "Any town",
+        "The Rogue Encampment",
+        "Lut Gholein",
+        "Pandemonium Fortress"
       ],
       "answerIndex": 1,
       "source": "https://diablo2.wiki.fextralife.com/Secret+Cow+Level",
-      "explanation": "Killing the Cow King on a difficulty permanently seals the portal for that character; no more cow runs on that difficulty."
+      "explanation": "The transmutation only works in the Rogue Encampment. A town must be attuned to open it."
+    },
+    {
+      "id": "cow-prereq",
+      "difficulty": 5,
+      "prompt": "What prerequisite must be met to open the Cow Portal?",
+      "choices": [
+        "Completing Khalim's Will",
+        "Reaching level 25",
+        "Completing the game on that difficulty",
+        "Holding a Horadric Cube"
+      ],
+      "answerIndex": 2,
+      "source": "https://diablo2.wiki.fextralife.com/Secret+Cow+Level",
+      "explanation": "You must have defeated the final boss on the chosen difficulty before the portal can open."
+    },
+    {
+      "id": "cow-wirts-origin",
+      "difficulty": 5,
+      "prompt": "Wirt's Leg, half of the Cow portal recipe, is looted from where?",
+      "choices": [
+        "The Forgotten Tower",
+        "Tristram",
+        "The Rogue Encampment",
+        "The Catacombs"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Tristram",
+      "explanation": "Wirt lies dead in the ruined town of Tristram; his wooden leg is the key ingredient."
+    },
+    {
+      "id": "cow-king-result",
+      "difficulty": 5,
+      "prompt": "Killing The Cow King has which permanent effect on that character?",
+      "choices": [
+        "Grants a permanent +1 to all skills",
+        "Permanently seals the portal on that difficulty",
+        "Marks the character with a cursed aura",
+        "Doubles Magic Find for an hour"
+      ],
+      "answerIndex": 1,
+      "source": "https://diablo2.wiki.fextralife.com/Secret+Cow+Level",
+      "explanation": "Once the Cow King falls, that character can never reopen the portal on that difficulty again."
+    },
+    {
+      "id": "cow-inhabitants",
+      "difficulty": 5,
+      "prompt": "The standard inhabitants of the Cow Level are called what?",
+      "choices": [
+        "Hell Bovines",
+        "Moon Cows",
+        "Blood Oxen",
+        "Udder Beasts"
+      ],
+      "answerIndex": 0,
+      "source": "https://diablo2.wiki.fextralife.com/The+Cow+King",
+      "explanation": "The level is filled with Hell Bovines, the same breed as the Cow King himself."
     }
   ]
 }
