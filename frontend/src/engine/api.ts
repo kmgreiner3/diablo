@@ -48,6 +48,52 @@ export async function fetchLeaderboard(quizId: string): Promise<ScoreEntry[]> {
   return res.json();
 }
 
+export interface DayLedger {
+  date: string;
+  entries: ScoreEntry[];
+}
+export interface AggregatedLedgers {
+  days: DayLedger[];
+  overall: ScoreEntry[];
+}
+
+export async function fetchAllLedgers(): Promise<AggregatedLedgers> {
+  if (USE_MOCK) {
+    const all = mockRead();
+    const byDate = new Map<string, ScoreEntry[]>();
+    for (const e of all) {
+      const date = e.quizId.replace(/^diablo2-/, "");
+      if (!byDate.has(date)) byDate.set(date, []);
+      byDate.get(date)!.push(e);
+    }
+    const days: DayLedger[] = [...byDate.entries()]
+      .filter(([, entries]) => entries.length > 0)
+      .map(([date, entries]) => ({
+        date,
+        entries: entries
+          .slice()
+          .sort((a, b) => b.score - a.score || a.durationMs - b.durationMs),
+      }))
+      .sort((a, b) => (a.date < b.date ? 1 : -1));
+
+    // Overall: best per user
+    const byUser = new Map<string, ScoreEntry>();
+    for (const e of all) {
+      const prev = byUser.get(e.username);
+      if (!prev || e.score > prev.score || (e.score === prev.score && e.durationMs < prev.durationMs)) {
+        byUser.set(e.username, e);
+      }
+    }
+    const overall = [...byUser.values()].sort(
+      (a, b) => b.score - a.score || a.durationMs - b.durationMs
+    );
+    return { days, overall };
+  }
+  const res = await fetch(LEADERBOARD_API);
+  if (!res.ok) throw new Error(`leaderboard failed (${res.status})`);
+  return res.json();
+}
+
 /** Seeds a few rivals on today's leaderboard so the Ledger isn't empty on first play. */
 function seedMockIfEmpty() {
   if (!USE_MOCK) return;
